@@ -481,7 +481,7 @@ body.dark .proyectos .swiper .swiper-pagination-bullets .swiper-pagination-bulle
     }
 
     .site-header .logo {
-        padding-left: 4rem;
+        padding-left: 2rem;
     }
 
     .site-header .navbar{
@@ -553,15 +553,16 @@ body.dark .proyectos .swiper .swiper-pagination-bullets .swiper-pagination-bulle
     }
 
     .site-header{
-        padding: .3rem 8% ;
+        padding: .4rem 8% ;
     }
 
     .inicio .titulo p {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        margin: 1rem 0 1rem 0;
     }
     
     .inicio .titulo h1{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .switch {
@@ -576,7 +577,7 @@ body.dark .proyectos .swiper .swiper-pagination-bullets .swiper-pagination-bulle
     }
 
     .switch span {
-        line-height: 2.8rem;
+        line-height: 2.7rem;
         padding: 0 0 0 4px;
     }
     
