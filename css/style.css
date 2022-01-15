@@ -169,13 +169,14 @@ body.dark .site-header .navbar a:hover{
 }
 
 .switch span {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
     display: block;
     background: none;
     color: #fff;
     padding: 0 0 0 9px;
+    font-size: 1.5rem;
 }
 
 #acceder-btn .btn{
@@ -460,6 +461,12 @@ body.dark .proyectos .swiper .swiper-pagination-bullets .swiper-pagination-bulle
     html{
         font-size: 55%;
     }
+
+    .switch::after {
+        width: 28px;
+        height: 28px;
+        top: 0rem;
+    }
 }
 
 @media (max-width: 760px) {
@@ -497,34 +504,23 @@ body.dark .proyectos .swiper .swiper-pagination-bullets .swiper-pagination-bulle
         font-size: 2rem;
     }
     .switch {
-        background: #343d5b;
-        border-radius: 100px;
-        border: none;
-        position: relative;
-        cursor: pointer;
-        display: flex;
-        outline: none;
         width: 50px;
-        margin-top: .1rem;
-        margin-bottom: .5rem;
+        height: 22px;
     }
     
     .switch::after {
-        content: "";
-        display: block;
-        width: 28px;
-        height: 28px;
-        position: absolute;
-        background: #f1f1f1;
-        top: 0.2rem;
-        left: 0;
-        right: unset;
-        border-radius: 100px;
-        transition: .3s ease all;
-        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+        width: 20px;
+        height: 20px;
+        top: 0.1rem;
     }
 
-    
+    .switch span {
+        width: 3rem;
+        height: 3rem;
+        line-height: 2.7rem;
+        padding: 0 0 0 6px;
+        font-size: 1.5rem;
+    }
 
     .inicio .titulo p {
         font-size: 3rem;
@@ -545,21 +541,43 @@ body.dark .proyectos .swiper .swiper-pagination-bullets .swiper-pagination-bulle
         text-align: center;
     }
     
+    .site-header{
+        padding: 1rem 8% ;
+    }
 }
 
 
 @media (max-width: 570px) {
     html{
-        font-size: 48%;
+        font-size: 50%;
     }
+
+    .site-header{
+        padding: .3rem 8% ;
+    }
+
     .inicio .titulo p {
-        margin-top: 2rem;
-        font-size: 1.7rem;
+        font-size: 3rem;
     }
     
     .inicio .titulo h1{
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
+    .switch {
+        width: 40px;
+        height: 21px;
+    }
+
+    .switch::after {
+        width: 21px;
+        height: 21px;
+        top: 0;
+    }
+
+    .switch span {
+        line-height: 2.8rem;
+        padding: 0 0 0 4px;
+    }
     
 }
