@@ -18,7 +18,6 @@
 
 
 *{
-    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -70,7 +69,23 @@ body.dark section .heading{
     padding: .8rem 3rem;
 }
 
+.btn-enviar{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    background: var(--green);
+    color: var(--black);
+    font-weight: 500;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+}
+
 .btn:hover{
+    background: var(--secundario);
+}
+
+.btn-enviar:hover{
     background: var(--secundario);
 }
 
@@ -450,10 +465,108 @@ body.dark .proyectos .swiper .swiper-pagination-bullets .swiper-pagination-bulle
 
 
 
+/**Contactos**/
+
+.contactos{
+    margin-top: 3rem;
+}
+
+.contactos .titulo {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 4rem;
+    color: var(--black);
+}
+
+body.dark .contactos .titulo{
+    color: var(--white);
+}
+
+.contactos .site-contacto{
+    font-weight: bold;
+    color: var(--green);
+    font-style: normal;
+    font-size: 2.3rem;
+}
+
+.contactos .row .columns{
+    border: var(--borde);
+    box-shadow: var(--box-shadow);
+}
+
+.contactos .row {
+    margin-bottom: 2rem;
+}
+
+body.dark .contactos .row .columns {
+    background: #111;
+    color: var(--light-color);
+}
+
+
+.contactos .row .columns{
+    display: flex;
+    font-weight: normal;
+}
+
+.contactos .row .columns .enviar{
+    margin: auto;
+    color: var(--black);
+    text-align: center;
+    margin-top: 2.6rem;
+}
+
+
+.contactos .row .columns .enviar h3{
+    margin-bottom: .5rem;
+}
+
+
+.contactos .row .columns .enviar a{
+    margin-top: 0;
+}
+
+.contactos .row .columns:hover .enviar h3{
+    color: var(--black);
+}
+
+body.dark .contactos .row .columns .enviar h3 {
+    color: var(--light-color);
+}
+
+body.dark .contactos .row .columns:hover .enviar h3 {
+    color: var(--white);
+    
+}
+
+.logo-contacto {
+    width: 8rem;
+    height: 8rem;
+    margin: 2rem 0 2rem 1rem;
+}
+
+.contactos .row .columns:hover {
+    transform: scale(1.1);
+}
+
+body.dark .contactos .row .columns:hover {
+    transform: none;
+}
+
+body.dark main .contactos .row .columns img {
+    filter: grayscale(100%);
+}
+
+body.dark main .contactos .row .columns:hover img {
+    filter: grayscale(0);
+}
 
 
 
-
+body.dark main .contactos .row .columns:hover img.invertido {
+    filter: invert(100%);
+    
+}
 
 /*Media Q*/
 
