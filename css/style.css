@@ -100,7 +100,7 @@ body.dark section .heading{
     align-items: center;
     justify-content: space-between;
     padding: 2rem 8% ;
-    overflow-x: hidden;
+    overflow: hidden!important;
 }
 
 body.dark .site-header {
@@ -263,6 +263,10 @@ section .row .columns{
     box-shadow: var(--box-shadow);
     border-radius: .5rem;
 
+}
+
+section .row .col-skill{
+    overflow: hidden!important;
 }
 
 body.dark section .row .columns {
