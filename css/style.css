@@ -218,23 +218,20 @@ body.dark .site-header .navbar a:hover{
 
 /* Inicio */
 
-.inicio {
-    position: relative;
-    display: inline-block;
+.contenido {
+    background: url(../img/inicio.png);
+    min-height: 690px;
+    background-position: center center;
+	background-size: cover;
+}
+
+.inicio{
+    display: flex;
+}
+
+.inicio .titulo{
+    margin: 27rem auto 0 auto;
     text-align: center;
-    width: 100%;
-    margin-top: 3rem;
-}
-
-.inicio img {
-    width: 100%;
-}
-
-.inicio .titulo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .inicio .titulo p {
@@ -663,12 +660,16 @@ body.dark .footer .site-footer .copyright{
         font-size: 1.5rem;
     }
 
+    .contenido {
+        min-height: 600px;
+    }
+
     .inicio .titulo p {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     
     .inicio .titulo h1{
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
 
     .icons-skils {
@@ -701,14 +702,6 @@ body.dark .footer .site-footer .copyright{
         padding:2rem 5%;
     }
 
-    .inicio .titulo p {
-        font-size: 2rem;
-        margin: 1rem 0 1rem 0;
-    }
-    
-    .inicio .titulo h1{
-        font-size: 2rem;
-    }
 
     .switch {
         width: 40px;
@@ -726,4 +719,18 @@ body.dark .footer .site-footer .copyright{
         padding: 0 0 0 4px;
     }
     
+}
+
+@media (max-width: 450px) {
+    .contenido {
+        min-height: 500px;
+    }
+
+    .inicio .titulo p {
+        font-size: 3rem;
+    }
+    
+    .inicio .titulo h1{
+        font-size: 3.5rem;
+    }
 }
