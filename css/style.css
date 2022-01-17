@@ -99,7 +99,7 @@ body.dark section .heading{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 8% !important;
+    padding: 2rem 8% ;
 }
 
 body.dark .site-header {
@@ -264,8 +264,8 @@ section .row .columns{
 
 }
 
-section .row .col-skill{
-    overflow: hidden!important;
+#sobre-mi .row{
+    overflow-x: hidden!important;
 }
 
 body.dark section .row .columns {
@@ -698,7 +698,9 @@ body.dark .footer .site-footer .copyright{
         font-size: 50%;
     }
 
-    
+    .site-header{
+        padding: .4rem 5% ;
+    }
 
     main {
         padding:2rem 5%;
