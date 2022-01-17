@@ -100,7 +100,7 @@ body.dark section .heading{
     align-items: center;
     justify-content: space-between;
     padding: 2rem 8% ;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 body.dark .site-header {
