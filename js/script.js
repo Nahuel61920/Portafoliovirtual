@@ -1,6 +1,8 @@
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.navbar');
 
+const btnSwitch = document.querySelector("#switch");
+
 menu.onclick = () => {
     navbar.classList.toggle("activar")
 }
@@ -20,12 +22,26 @@ window.onload = () => {
 
 }
 
-const btnSwitch = document.querySelector("#switch");
 
 btnSwitch.addEventListener("click", () => {
     document.body.classList.toggle("dark");
-    btnSwitch.classList.toggle("active")
+    btnSwitch.classList.toggle("active");
+        if (document.body.classList.contains("dark")) {
+        localStorage.setItem("dark-mode", "true");
+    } else{
+        localStorage.setItem("dark-mode", "false");
+    }
 })
+
+
+if(localStorage.getItem("dark-mode") === "true"){
+    document.body.classList.add("dark");
+    btnSwitch.classList.add("active");
+} else {
+    document.body.classList.remove("dark");
+}
+
+
 
 var swiper = new Swiper(".proyectos-slider", {
     grabCursor: true,
