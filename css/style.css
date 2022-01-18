@@ -347,6 +347,7 @@ body.dark main section .row .columns .skill img:hover {
     box-shadow: var(--box-shadow);
     border: var(--borde);
     border-bottom: 1rem solid var(--white);
+    margin-left: 0.5rem;
 }
 
 #servicios .row .columns:hover{
@@ -685,6 +686,10 @@ body.dark .footer .site-footer .copyright{
 
     section .row .columns{
         text-align: center;
+    }
+
+    #servicios .row .columns{
+        margin-left: 0;
     }
     
     .site-header{
