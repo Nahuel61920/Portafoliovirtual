@@ -576,6 +576,37 @@ body.dark main .contactos .row .columns:hover img.invertido {
 }
 
 
+/** boton up **/
+
+#button-up{
+    width: 50px;
+    height: 50px;
+    background: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 90px;
+    right: 40px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all .3s ease;
+    transform: scale(0);
+}
+
+#button-up:hover{
+    transform: scale(1.1);
+    border-color: rgba(0,0,0,0.1);
+}
+
+body.dark #button-up{
+    background: var(--white);
+    color: var(--light-color);
+}
+
 /**Footer**/
 
 .footer {
@@ -728,6 +759,11 @@ body.dark .footer .site-footer .copyright{
         padding: 0 0 0 4px;
     }
     
+    #button-up{
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 450px) {
