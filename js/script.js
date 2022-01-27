@@ -1,8 +1,6 @@
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.navbar');
 
-const btnSwitch = document.querySelector("#switch");
-
 menu.onclick = () => {
     navbar.classList.toggle("activar")
 }
@@ -22,6 +20,8 @@ window.onload = () => {
 
 }
 
+const btnSwitch = document.querySelector("#switch");
+
 
 btnSwitch.addEventListener("click", () => {
     document.body.classList.toggle("dark");
@@ -40,8 +40,6 @@ if(localStorage.getItem("dark-mode") === "true"){
 } else {
     document.body.classList.remove("dark");
 }
-
-
 
 var swiper = new Swiper(".proyectos-slider", {
     grabCursor: true,
@@ -93,3 +91,30 @@ const typed = new Typed('.typed', {
     cursorChar: '|', 
     contentType: 'html', 
 });
+
+document.getElementById("button-up").addEventListener("click", scrollUp);
+
+function scrollUp(){
+
+    const currentScroll = document.documentElement.scrollTop;
+
+    if (currentScroll > 0){
+        window.requestAnimationFrame(scrollUp);
+        window.scrollTo (0, currentScroll - (currentScroll / 4));
+    }
+}
+
+
+buttonUp = document.getElementById("button-up");
+
+window.onscroll = function(){
+
+    const scroll = document.documentElement.scrollTop;
+
+    if (scroll > 400){
+        buttonUp.style.transform = "scale(1)";
+    }else if(scroll < 400){
+        buttonUp.style.transform = "scale(0)";
+    }
+
+}
