@@ -977,7 +977,7 @@ body.dark .icon-dark {
 
     circle{
         stroke-width: 8px;
-        
+    }
 }
 
 @media (max-width: 760px) {
