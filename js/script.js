@@ -1,3 +1,30 @@
+document.getElementById("button-up").addEventListener("click", scrollUp);
+
+function scrollUp(){
+
+    const currentScroll = document.documentElement.scrollTop;
+
+    if (currentScroll > 0){
+        window.requestAnimationFrame(scrollUp);
+        window.scrollTo (0, currentScroll - (currentScroll / 10));
+    }
+}
+
+
+buttonUp = document.getElementById("button-up");
+
+window.onscroll = function(){
+
+    const scroll = document.documentElement.scrollTop;
+
+    if (scroll > 500){
+        buttonUp.style.transform = "scale(1)";
+    }else if(scroll < 500){
+        buttonUp.style.transform = "scale(0)";
+    }
+
+}
+
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.navbar');
 
@@ -20,32 +47,6 @@ window.onload = () => {
 
 }
 
-document.getElementById("button-up").addEventListener("click", scrollUp);
-
-function scrollUp(){
-
-    const currentScroll = document.documentElement.scrollTop;
-
-    if (currentScroll > 0){
-        window.requestAnimationFrame(scrollUp);
-        window.scrollTo (0, currentScroll - (currentScroll / 2));
-    }
-}
-
-
-buttonUp = document.getElementById("button-up");
-
-window.onscroll = function(){
-
-    const scroll = document.documentElement.scrollTop;
-
-    if (scroll > 400){
-        buttonUp.style.transform = "scale(1)";
-    }else if(scroll < 400){
-        buttonUp.style.transform = "scale(0)";
-    }
-
-}
 
 const btnSwitch = document.querySelector("#switch");
 
