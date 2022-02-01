@@ -20,6 +20,8 @@ window.onload = () => {
 
 }
 
+
+
 document.getElementById("button-up").addEventListener("click", scrollUp);
 
 function scrollUp(){
@@ -28,7 +30,7 @@ function scrollUp(){
 
     if (currentScroll > 0){
         window.requestAnimationFrame(scrollUp);
-        window.scrollTo (0, currentScroll - (currentScroll / 2));
+        window.scrollTo (0, currentScroll - (currentScroll / 10));
     }
 }
 
@@ -39,9 +41,9 @@ window.onscroll = function(){
 
     const scroll = document.documentElement.scrollTop;
 
-    if (scroll > 400){
+    if (scroll > 500){
         buttonUp.style.transform = "scale(1)";
-    }else if(scroll < 400){
+    }else if(scroll < 500){
         buttonUp.style.transform = "scale(0)";
     }
 
