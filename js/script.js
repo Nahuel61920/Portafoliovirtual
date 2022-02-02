@@ -47,32 +47,21 @@ if(localStorage.getItem("dark-mode") === "true"){
 
 
 
-document.getElementById("button-up").addEventListener("click", scrollUp);
-
-function scrollUp(){
-
-    const currentScroll = document.documentElement.scrollTop;
-
-    if (currentScroll > 0){
-        window.requestAnimationFrame(scrollUp);
-        window.scrollTo (0, currentScroll - currentScroll );
-    }
-}
-
-
-buttonUp = document.getElementById("button-up");
-
-window.onscroll = function(){
-
-    const scroll = document.documentElement.scrollTop;
-
-    if (scroll > 500){
-        buttonUp.style.transform = "scale(1)";
-    }else if(scroll < 500){
-        buttonUp.style.transform = "scale(0)";
-    }
-
-}
+$(document).ready(function(){
+	$(window).scroll(function(){
+		if($(this).scrollTop() > 0) {
+			$('#cm-up').slideDown(300);
+		} else {
+			$('#cm-up').slideUp(300);
+		}
+	});
+	$('#cm-up').on('click', function(){
+		$('body, html').animate({
+			scrollTop: 0
+		},1);
+		return false;
+	});
+});
 
 
 var swiper = new Swiper(".proyectos-slider", {

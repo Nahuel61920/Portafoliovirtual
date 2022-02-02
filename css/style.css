@@ -591,33 +591,40 @@ body.dark main .contactos .row .columns:hover img.invertido {
 
 /** boton up **/
 
-#button-up{
-    width: 50px;
-    height: 50px;
-    background: var(--black);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--white);
-    border-radius: 50%;
-    font-size: 20px;
-    position: fixed;
-    bottom: 90px;
-    right: 40px;
-    cursor: pointer;
-    border: 4px solid transparent;
-    transition: all .3s ease;
-    transform: scale(0);
+.cm-up {
+	display: none;
+	position: fixed;
+	background: var(--light-color);
+	border-radius: 50%;
+	bottom: 40px;
+	right: 30px;
+	cursor: pointer;
 }
 
-#button-up:hover{
-    transform: scale(1.1);
-    border-color: rgba(0,0,0,0.1);
+
+
+.cm-up .cm-icon {
+	background: var(--black);
+	color: var(--white);
+	font-size: 20px;
+	float: right;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.4s
 }
 
-body.dark #button-up{
+body.dark .cm-up .cm-icon {
     background: var(--white);
-    color: var(--light-color);
+	color: var(--black);
+}
+
+
+.cm-up:hover {
+	transform: scale(1.1);
 }
 
 /**Footer**/
@@ -980,6 +987,8 @@ body.dark .icon-dark {
     }
 }
 
+
+
 @media (max-width: 760px) {
 
     #menu-btn{
@@ -1020,16 +1029,16 @@ body.dark .icon-dark {
     }
     
     .switch::after {
-        width: 20px;
-        height: 20px;
-        top: 0.1rem;
+        width: 22px;
+        height: 22px;
+        top: 0;
     }
 
     .switch span {
         width: 3rem;
         height: 3rem;
         line-height: 2.7rem;
-        padding: 0 0 0 6px;
+        padding: 0 0 0 4px;
         font-size: 1.5rem;
     }
 
@@ -1049,7 +1058,6 @@ body.dark .icon-dark {
         width: 6rem;
         height: 6rem;
         margin: 1.7rem 3rem;
-        
     }
 
     section .row .columns{
@@ -1064,16 +1072,10 @@ body.dark .icon-dark {
         display: flex;
         flex-direction: column;
     }
-    .sobre-mi-img-containe{
-        display: flex;
-        margin: auto;
-        justify-content: center;
-    }
     
     .cv {
         transform: none;
     }
-    
     .site-header{
         padding: 1rem 8% ;
     }
@@ -1107,13 +1109,13 @@ body.dark .icon-dark {
 
     .switch span {
         line-height: 2.7rem;
-        padding: 0 0 0 4px;
+        padding: 1px 0 0 4px;
     }
     
-    #button-up{
-        width: 40px;
-        height: 40px;
+    .cm-up .cm-icon {
         font-size: 15px;
+        width: 35px;
+        height: 35px;
     }
 
     .skill-nivel{
