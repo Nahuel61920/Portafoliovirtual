@@ -584,13 +584,13 @@ body.dark main .contactos .row .columns img {
     filter: grayscale(100%);
 }
 
+
 body.dark main .contactos .row .columns:hover img {
     filter: grayscale(0);
 }
 
-body.dark main .contactos .row .columns:hover img.invertido {
+body.dark main .contactos .row .columns img.invertido {
     filter: invert(100%);
-    
 }
 
 
@@ -801,6 +801,9 @@ body.dark .skill-info{
     font-weight: 600px;
 }
 
+.circle-mq{
+    display: none;
+}
 
 circle{
     fill: none;
@@ -1084,6 +1087,25 @@ body.dark .icon-dark {
     .site-header{
         padding: 1rem 8% ;
     }
+    .circle-mq{
+        display: flex;
+    }
+
+    .circle-pc{
+        display: none;
+    }
+
+    circle{
+        stroke-dasharray: 370;
+        stroke-dashoffset: 370;
+    }
+
+    
+
+    .skill-nivel{
+        width: 13.89rem;
+        height: 13.89rem;
+    }
 }
 
 
@@ -1116,6 +1138,11 @@ body.dark .icon-dark {
         line-height: 2.7rem;
         padding: 0.4px 0 0 4px;
     }
+
+    .icons-skils {
+        margin: 1.7rem 2rem;
+        
+    }
     
     .cm-up .cm-icon {
         font-size: 15px;
@@ -1124,8 +1151,8 @@ body.dark .icon-dark {
     }
 
     .skill-nivel{
-        width: 18.5rem;
-        height: 18.5rem;
+        width: 15.28rem;
+        height: 15.28rem;
     }
 
     .skill-name{
@@ -1149,5 +1176,9 @@ body.dark .icon-dark {
     .skill-container{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 7rem;
+    }
+    .skill-nivel{
+        width: 15.25rem;
+        height: 15.25rem;
     }
 }
