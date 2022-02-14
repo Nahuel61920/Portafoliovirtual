@@ -116,6 +116,7 @@ body.dark .btn-codigo:hover {
     align-items: center;
     justify-content: space-between;
     padding: 2rem 8% ;
+    overflow-x: hidden!important;
 }
 
 body.dark .site-header {
@@ -1109,7 +1110,7 @@ body.dark .icon-dark {
 
     .switch span {
         line-height: 2.7rem;
-        padding: 1px 0 0 4px;
+        padding: 0.4px 0 0 4px;
     }
     
     .cm-up .cm-icon {
