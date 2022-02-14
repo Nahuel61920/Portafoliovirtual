@@ -116,7 +116,7 @@ body.dark .btn-codigo:hover {
     align-items: center;
     justify-content: space-between;
     padding: 2rem 8% ;
-    overflow-x: hidden!important;
+    
 }
 
 body.dark .site-header {
@@ -411,6 +411,10 @@ body.dark #servicios .row h3{
 
 
 /**Proyectos**/
+
+#proyectos .proyect-site{
+    overflow-x: hidden!important;
+}
 
 .proyectos .proyectos-slider{
     padding-bottom: 5rem;
