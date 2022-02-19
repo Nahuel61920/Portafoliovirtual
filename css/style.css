@@ -609,7 +609,7 @@ body.dark main .contactos .row .columns img.invertido {
 	position: fixed;
 	background: var(--light-color);
 	border-radius: 50%;
-	bottom: 40px;
+	bottom: 50px;
 	right: 30px;
 	cursor: pointer;
 }
@@ -645,6 +645,7 @@ body.dark .cm-up .cm-icon {
 .footer {
     border-top: 3px solid #f1f1f1ee;
     box-shadow: var(--box-shadow);
+    padding: 2rem 8% ;
 }
 
 body.dark .footer {
@@ -653,13 +654,31 @@ body.dark .footer {
     border-top: 3px solid #111;
 }
 
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+}
 .site-footer .copyright{
-    text-align: center;
     font-size: 1.5rem;
     padding: 2rem 0;
 }
 
+.site-footer .redes-sociales{
+    padding: 2rem 0;
+}
+
+.site-footer .redes-sociales a{
+    font-size: 3rem;
+    padding-left: 4rem;
+    color: var(--black);
+}
+
+
 body.dark .footer .site-footer .copyright{
+    color: var(--white);
+}
+
+body.dark .footer .site-footer .redes-sociales a{
     color: var(--white);
 }
 
@@ -1270,7 +1289,30 @@ body.dark .icon-dark {
 
     .icons-skils {
         margin: 1.7rem 2rem;
-        
+    }
+
+    .contactos .row .columns .enviar{
+        margin: 1rem auto;
+    }
+
+    .logo-contacto {
+        width: 5rem;
+        height: 5rem;
+        margin: 1rem 0 1rem 1rem;
+    }
+
+    .footer{
+        padding: .4rem 5% ;
+    }
+
+    .site-footer .copyright p{
+        font-size: 1.2rem;
+    }
+
+    .site-footer .redes-sociales a{
+        font-size: 2.5rem;
+        padding-left: 2rem;
+        color: var(--black);
     }
     
     .cm-up .cm-icon {
@@ -1299,7 +1341,7 @@ body.dark .icon-dark {
         "img-12 img-11"
         "img-13 img-14";
 		height: auto;
-		grid-template-rows: repeat(11, 150px);
+		grid-template-rows: repeat(8, 150px);
 	}
 }
 
