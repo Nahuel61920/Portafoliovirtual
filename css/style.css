@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root{
-    --green:#4BE5CF;
-    --secundario: #8BF8E7;
+    --green:#00e5fe;
+    --secundario: #15b8ca;
     --terciario: #2b756a;
     --black:#121f41;
     --light-color:#788E9C;
@@ -1097,6 +1097,28 @@ body.dark .icon-dark {
 	font-size: 30px;
 }
 
+/* Loading */
+
+.loading-container{
+    position: fixed;
+    top:0; left: 0;
+    height:100%;
+    width: 100%;
+    z-index: 10000;
+    background:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-container.active{
+    display: none;
+}
+
+.loading-container img{
+    height:20rem;
+}
+
 
 
 
@@ -1319,6 +1341,10 @@ body.dark .icon-dark {
         font-size: 15px;
         width: 35px;
         height: 35px;
+    }
+
+    .skills-img {
+        height: 17rem;
     }
 
     .skill-nivel{

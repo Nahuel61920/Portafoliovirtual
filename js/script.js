@@ -19,8 +19,17 @@ window.onload = () => {
     document.querySelector(".site-header").classList.add("activar")
     }else document.querySelector(".site-header").classList.remove("activar")
 
+    fadeOut();
 }
 
+
+function loader(){
+    document.querySelector('.loading-container').classList.add('active');
+    }
+
+function fadeOut(){
+    setTimeout(loader, 3000);
+}
 
 
 const btnSwitch = document.querySelector("#switch");
