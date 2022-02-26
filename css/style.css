@@ -36,9 +36,9 @@ html{
     font-family: 'Poppins', sans-serif;
     font-size: 62.5%;
     overflow-x: hidden;
-    scroll-padding-top: 7rem;
     scroll-behavior: smooth;
 }
+
 
 main {
     padding:2rem 8%;
@@ -142,24 +142,48 @@ body.dark .site-header .logo span {
     color: var(--white);
 }
 
+
 .site-header .navbar a{
     font-size: 1.7rem;
     margin: 0 3rem 0 0;
     color: var(--black);
+    position: relative;
 }
 
+.site-header .navbar a::before{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: var(--green);
+    position: absolute;
+    left: 0;
+    bottom: -1.2rem;
+    transition: 0.4s ease-out;
+}
 
+.site-header .navbar a:hover::before{
+    width: 100%;
+}
 
 body.dark .site-header .navbar a{
     color: var(--white);
 }
 
-body.dark .site-header .navbar a:hover{
-    color: var(--secundario);
+.site-header .navbar .active-link::before,
+.site-header .navbar a.active::before{
+    content: "";
+    height: 3px;
+    width: 100%;
+    background: var(--secundario);
+    position: absolute;
+    left: 0;
+    bottom: -1.2rem;
+    transition: 0.4s ease-out;
 }
 
-.site-header .navbar a:hover{
-    color: var(--green);
+body.dark .site-header .navbar a.active::before,
+body.dark .site-header .navbar .active-link::before {
+    background: var(--green);
 }
 
 .switch {
@@ -1196,6 +1220,21 @@ body.dark .icon-dark {
         margin: 2rem;
         font-size: 2rem;
     }
+
+    .site-header .navbar a:hover{
+        color: var(--secundario)!important;
+    }
+
+    .site-header .navbar a::before{
+        content: none;
+    }
+
+    .site-header .navbar .active-link::before,
+    .site-header .navbar a.active::before,
+    .site-header .navbar .active-link:hover:before{
+        width: 78px;
+    }
+
     .switch {
         width: 50px;
         height: 22px;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -21,9 +21,9 @@
 
         <nav class="navbar">
             <a href="index.html">Inicio</a>
-            <a href="sobre-mi.html">Sobre mi</a>
+            <a href="sobre-mi.html" class="active">Sobre mi</a>
             <a href="index.html">servicios</a>
-            <a href="index.html">proyectos</a>
+            <a href="proyectos.html">proyectos</a>
             <a href="index.html">contactos</a>
         </nav>
 
@@ -37,7 +37,7 @@
 
     
     <main>
-        <section class="sobre-mi-seccion">
+        <section class="sobre-mi-seccion" id="sobre-mi">
             <div class="sobre-mi-container">
                 <div class="sobre-mi-img-container">
                     <img src="img/home.jpg" alt="" class="sobre-mi-img">
@@ -49,7 +49,7 @@
             <div class="skill-seccion">
                 <h2 class="heading">Skills</h2>
                 <div class="skill-container">
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="flip-left" data-aos-delay="300">
                         <img alt="HTML" class="skills-img icon-li" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" title="HTML5">
                         <img alt="HTML" class="skills-img icon-dark" src="img/html.png" title="HTML5">
                         <div class="skill-nivel">
@@ -77,7 +77,7 @@
                         <h1 class="skill-name">HTML</h1>
                         <p class="skill-info">Más de un año de experiencia profesional en este lenguaje, me permiten desempeñarme sin problemas en la industria</p>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="flip-up" data-aos-delay="300">
                         <img alt="CSS" class="skills-img icon-li" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" title="CSS3">                        
                         <img alt="CSS" class="skills-img icon-dark" src="img/css.png" title="CSS3">
                         <div class="skill-nivel">
@@ -105,7 +105,7 @@
                         <h1 class="skill-name">CSS</h1>
                         <p class="skill-info">Más de un año de experiencia laboral en este lenguaje, lo utilizo diariamente para desarrollar diseños web e interfases</p>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="flip-right" data-aos-delay="300">
                         <img alt="Js" class="skills-img icon-li" src="https://cdn.iconscout.com/icon/free/png-256/javascript-2752148-2284965.png" title="Java Script">
                         <img alt="Js" class="skills-img icon-dark" src="img/js.png" title="Java Script">
                         <div class="skill-nivel">
@@ -133,7 +133,7 @@
                         <h1 class="skill-name">Javascript</h1>
                         <p class="skill-info">Un año de experiencia usándolo en la rama del front-end, me permitieron familiarizarme con el lenguaje, e incluirlo en mis proyectos laborales</p>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="flip-left" data-aos-delay="300">
                         <img alt="Sass" class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"  title="Sass"/>
                         <div class="skill-nivel">
                             <div class="skills">
@@ -160,7 +160,7 @@
                         <h1 class="skill-name">Sass</h1>
                         <p class="skill-info">Un año usando este preprocesador en el ámbito profesional, lo incluyo en mucho de mis proyectos ya que me permite un código mejor estructurado</p>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="flip-down" data-aos-delay="300">
                         <img alt="Bootstrap" class="skills-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"  title="Bootstrap"/>
                         <div class="skill-nivel">
                             <div class="skills">
@@ -187,7 +187,7 @@
                         <h1 class="skill-name">Bootstrap</h1>
                         <p class="skill-info">Menos de un año utilizando este framework, aun así, lo utilice en incontables proyectos laborales, que me permitieron conocerlo en su mayoría</p>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="flip-right" data-aos-delay="300">
                         <img alt="SwiperJs" class="skills-img" src="https://cms-assets.tutsplus.com/uploads/users/780/posts/39427/image-upload/68747470733a2f2f6769746875622e7375726d6f6e2e6d652f696d616765732f636f6d6d6f6e2f7377697065722d6c6f676f2e737667.svg" title="Swiper Js">
                         <div class="skill-nivel">
                             <div class="skills">
@@ -248,12 +248,10 @@
         <img src="img/Waiting.gif" alt="">
     </div>
     
-    
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/typed.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/script-02.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
 
         AOS.init({

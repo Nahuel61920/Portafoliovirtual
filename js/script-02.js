@@ -28,7 +28,7 @@ function loader(){
     }
 
 function fadeOut(){
-    setTimeout(loader, 2000);
+    setTimeout(loader, 1000);
 }
 
 
@@ -56,7 +56,6 @@ if(localStorage.getItem("dark-mode") === "true"){
 
 
 
-
 $(document).ready(function(){
 	$(window).scroll(function(){
 		if($(this).scrollTop() > 0) {
@@ -72,3 +71,4 @@ $(document).ready(function(){
 		return false;
 	});
 });
+
