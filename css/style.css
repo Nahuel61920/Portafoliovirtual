@@ -42,6 +42,7 @@ html{
 
 main {
     padding:2rem 8%;
+    overflow-x: hidden!important;
 }
 
 .heading{
@@ -716,6 +717,7 @@ body.dark .footer .site-footer .redes-sociales a{
     top: 0;
     transition: 1s;
     margin-bottom: 2rem;
+    overflow-x: hidden!important;
 }
 
 .sobre-mi-container {
