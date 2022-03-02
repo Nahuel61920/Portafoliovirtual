@@ -1122,7 +1122,7 @@ body.dark .icon-dark {
 /* Modal */
 
 .eins-modal{
-    padding: 2rem!important;
+    padding: 4rem!important;
 }
 
 body.dark .eins-modal-content{
@@ -1394,11 +1394,23 @@ body.dark .eins-modal-text-3 {
         height: 13.89rem;
     }
 
-    
+    .eins-modal-preview {
+        max-width: 200px;
+        width: 70%;
+    }
 
-    .projects__hover a{
-        font-size: 1.3rem;
-        width: 13rem;
+    .eins-modal-text p {
+        font-size: 1.5rem;
+    }
+
+    .eins-modal-text-2 {
+        padding: 2rem 0 2rem;
+        font-size: 1.5rem;
+    }
+
+    .eins-modal-text-2,
+    .eins-modal-text-3 {
+        font-size: 1.5rem;
     }
 }
 
@@ -1515,5 +1527,12 @@ body.dark .eins-modal-text-3 {
     .skill-nivel{
         width: 15.25rem;
         height: 15.25rem;
+    }
+
+    .eins-modal{
+        padding: 2rem!important;
+    }
+    .eins-modal-content{
+        padding: 1rem!important;
     }
 }
