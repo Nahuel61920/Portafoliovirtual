@@ -43,7 +43,6 @@ html{
     scroll-behavior: smooth;
 }
 
-
 main {
     padding:2rem 8%;
     overflow: hidden!important;
@@ -61,8 +60,6 @@ body.dark section .heading{
     color: var(--white);
 }
 
-
-
 .btn{
     display: inline-block;
     margin-top: 1rem;
@@ -75,12 +72,9 @@ body.dark section .heading{
     padding: .8rem 3rem;
 }
 
-
-
 .btn:hover{
     background: var(--secundario);
 }
-
 
 .btn-codigo {
     display: inline-block;
@@ -101,7 +95,11 @@ body.dark section .heading{
 }
 
 body.dark .btn-codigo {
-    background: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+
+.cv{
     border: 2px solid var(--white);
     color: var(--white);
 }
@@ -110,6 +108,9 @@ body.dark .btn-codigo:hover {
     background: var(--white);
     color: var(--black);
 }
+
+
+/********************** header **********************/
 
 .site-header{
     position: fixed;
@@ -122,7 +123,6 @@ body.dark .btn-codigo:hover {
     align-items: center;
     justify-content: space-between;
     padding: 2rem 8% ;
-    
 }
 
 body.dark .site-header {
@@ -263,7 +263,8 @@ body.dark .site-header .navbar .active-link::before {
     display: none;
 }
 
-/* Inicio */
+
+/********************** Inicio **********************/
 
 .contenido {
     background: url(../img/inicio.png);
@@ -291,7 +292,8 @@ body.dark .site-header .navbar .active-link::before {
     color: var(--green)
 }
 
-/*Sobre Mi*/
+
+/********************** Sobre Mi **********************/
 
 section .row{
     display: grid;
@@ -309,7 +311,6 @@ section .row .columns{
     box-shadow: var(--box-shadow);
     border: var(--borde);
     border-radius: .5rem;
-
 }
 
 #sobre-mi .row{
@@ -368,7 +369,6 @@ section .row .col-skill h4{
 .skill{
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .skill h3{
@@ -414,7 +414,7 @@ body.dark main section .row .columns .skill img:hover {
 }
 
 
-/*Servicios*/
+/********************** Servicios **********************/
 
 #servicios .row{
     text-align: center;
@@ -470,7 +470,7 @@ body.dark #servicios .row h3{
 }
 
 
-/**Proyectos**/
+/********************** Proyectos **********************/
 
 #proyectos .proyect-site{
     overflow-x: hidden!important;
@@ -532,8 +532,6 @@ body.dark .proyectos .proyectos-slider .caja .content h3{
     margin-bottom: 2rem;
 }
 
-    
-
 body.dark .proyectos .proyectos-slider .caja .content p span{
     color: var(--white);
 }
@@ -553,8 +551,7 @@ body.dark .proyectos .swiper .swiper-pagination-bullets .swiper-pagination-bulle
 }
 
 
-
-/**Contactos**/
+/********************** Contactos **********************/
 
 .contactos{
     margin-top: 3rem;
@@ -583,7 +580,6 @@ body.dark .contactos .site-contacto{
     color: var(--green);
 }
 
-
 .contactos .row .columns{
     border: var(--borde);
     box-shadow: var(--box-shadow);
@@ -598,7 +594,6 @@ body.dark .contactos .row .columns {
     color: var(--light-color);
 }
 
-
 .contactos .row .columns{
     display: flex;
     font-weight: normal;
@@ -610,7 +605,6 @@ body.dark .contactos .row .columns {
     text-align: center;
     margin-top: 2.6rem;
 }
-
 
 .contactos .row .columns .enviar h3{
     margin-bottom: .5rem;
@@ -650,7 +644,6 @@ body.dark main .contactos .row .columns img {
     filter: grayscale(100%);
 }
 
-
 body.dark main .contactos .row .columns:hover img {
     filter: grayscale(0);
 }
@@ -660,7 +653,7 @@ body.dark main .contactos .row .columns img.invertido {
 }
 
 
-/** boton up **/
+/********************** Boton up **********************/
 
 .cm-up {
 	display: none;
@@ -671,8 +664,6 @@ body.dark main .contactos .row .columns img.invertido {
 	right: 30px;
 	cursor: pointer;
 }
-
-
 
 .cm-up .cm-icon {
 	background: var(--black);
@@ -693,12 +684,12 @@ body.dark .cm-up .cm-icon {
 	color: var(--black);
 }
 
-
 .cm-up:hover {
 	transform: scale(1.1);
 }
 
-/**Footer**/
+
+/********************** Footer **********************/
 
 .footer {
     border-top: 3px solid #f1f1f1ee;
@@ -716,6 +707,7 @@ body.dark .footer {
     display: flex;
     justify-content: space-between;
 }
+
 .site-footer .copyright{
     font-size: 1.5rem;
     padding: 2rem 0;
@@ -741,7 +733,7 @@ body.dark .footer .site-footer .redes-sociales a{
 }
 
 
-/* Sobre-mi-seccion */
+/********************** Sobre-mi-seccion **********************/
 
 .sobre-mi-seccion{
     width: 100%;
@@ -755,22 +747,26 @@ body.dark .footer .site-footer .redes-sociales a{
 
 .sobre-mi-container {
     display: grid;
-    grid-template-columns: 30% 65%;
-    grid-gap: 40px;
+    grid-template-columns: 30% 68%;
+    grid-gap: 2rem;
 }
 
 .sobre-mi-img-container{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
-.sobre-mi-info {
+.sobre-mi-info p{
     color: #000;
     font-size: 1.7rem;
     line-height: 2;
     text-transform: none;
+    padding-bottom: 1rem;
 }
 
-body.dark .sobre-mi-info {
+body.dark .sobre-mi-info p{
     color: var(--light-color);
 }
 
@@ -778,16 +774,13 @@ body.dark .sobre-mi-info {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: right;
     border-radius: 2rem;
 }
 
 .cv {
     position: absolute;
-    bottom: 2rem;
-    left: 2rem;
-    transform: translateX(40%);
-    border: 2px solid var(--white);
-    color: var(--white);
+    margin-bottom: 2rem;
 }
 
 .cv:hover{
@@ -795,40 +788,35 @@ body.dark .sobre-mi-info {
     color: var(--black);
 }
 
-/*Skill seccion*/
 
-.skill-seccion {
-    margin-top: 10rem;
-}
+/********************** Skill seccion **********************/
 
 .skill-container{
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10rem;
+    grid-gap: 5rem;
 }
-
-.skill-card{
-    position: relative;
-}
-
 
 .skills-img {
     display: block;
-    margin: auto;
-    height: 20rem;
+    margin: 0 auto;
+    height: 15rem;
 }
 
 body.dark .skills-img{
     filter: grayscale(100%);
 }
 
+body.dark .skill-card:hover .skills-img{
+    filter: grayscale(0%);
+}
 
 .skill-name{
     font-size: 3rem;
     font-weight: 500;
     text-align: center;
-    margin: 3rem 0 2rem;
+    margin: 2rem 0 2rem;
     color: var(--black);
 }
 
@@ -848,199 +836,14 @@ body.dark .skill-info{
     color: var(--light-color);
 }
 
-.skill-nivel{
-    position: absolute;
-    top: 8rem;
-    right: 0;
-    width: 15rem;
-    height: 15rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.2rem;
-    font-weight: 600;
-    border-radius: 50%;
-    border: 1rem solid ;
-}
+.btn-codigo{
 
-.skills{
-    width: 160px;
-    height: 160px;
-    position: relative;
-}
-
-.outer{
-    border-radius: 50%;
-    padding: 20px;
-}
-
-.inner{
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#number {
-    font-weight: 600px;
-}
-
-.circle-mq{
-    display: none;
-}
-
-circle{
-    fill: none;
-    stroke-width: 10px;
-    stroke-dasharray: 442;
-    stroke-dashoffset: 442;
-}
-
-
-.skill-card:nth-child(1) .skill-nivel circle{
-    stroke: #ff4f4f;
-    animation: anim-1 2s linear forwards;
-}
-@keyframes anim-1{
-    100%{
-        stroke-dashoffset: 39;
-    }
-}
-.skill-card:nth-child(1) .skill-nivel{
-    background: #ff4f4f70;
-    border-color: #912929;
-}
-body.dark .skill-card:nth-child(1) .skill-nivel{
-    background: #ff4f4f28;
-    border-color: #c92b2b;
-    color: #c92b2b;
-}
-
-
-.skill-card:nth-child(2) .skill-nivel circle{
-    stroke: #206eff;
-    animation: anim-2 2s linear forwards;
-}
-@keyframes anim-2{
-    100%{
-        stroke-dashoffset: 39;
-    }
-}
-.skill-card:nth-child(2) .skill-nivel{
-    background: #206eff70;
-    border-color: #0c2e6e;
-}
-body.dark .skill-card:nth-child(2) .skill-nivel{
-    background: #206eff28;
-    border-color: #4fa0ff;
-    color: #4fa0ff;
-}
-
-
-.skill-card:nth-child(3) .skill-nivel circle{
-    stroke: #ebee32;
-    animation: anim-3 2s linear forwards;
-}
-@keyframes anim-3{
-    100%{
-        stroke-dashoffset: 154;
-    }
-}
-.skill-card:nth-child(3) .skill-nivel{
-    background: #ebee3290;
-    border-color: #929420;
-}
-body.dark .skill-card:nth-child(3) .skill-nivel{
-    background: #ebee3228;
-    border-color: #d6ba32;
-    color: #d6ba32;
-}
-
-
-.skill-card:nth-child(4) .skill-nivel circle{
-    stroke: #d06ed3;
-    animation: anim-4 2s linear forwards;
-}
-@keyframes anim-4{
-    100%{
-        stroke-dashoffset: 44;
-    }
-}
-.skill-card:nth-child(4) .skill-nivel{
-    background: #d048d470;
-    border-color: #692d6b;
-}
-body.dark .skill-card:nth-child(4) .skill-nivel{
-    background: #d048d428;
-    border-color: #712e74;
-    color: #d06ed3;
-}
-
-
-.skill-card:nth-child(5) .skill-nivel circle{
-    stroke: #8120ff;
-    animation: anim-5 2s linear forwards;
-}
-@keyframes anim-5{
-    100%{
-        stroke-dashoffset: 88;
-    }
-}
-.skill-card:nth-child(5) .skill-nivel{
-    background: #8120ff70;
-    border-color: #481788;
-    color: #111;
-}
-body.dark .skill-card:nth-child(5) .skill-nivel{
-    background: #8120ff28;
-    border-color: #270a4d;
-    color: #8120ff;
 }
 
 
 
-.skill-card:nth-child(6) .skill-nivel circle{
-    stroke: #4920ff;
-    animation: anim-6 2s linear forwards;
-}
-@keyframes anim-6{
-    100%{
-        stroke-dashoffset: 44;
-    }
-}
-.skill-card:nth-child(6) .skill-nivel{
-    background: #4920ff70;
-    border-color: #271479;
-    color: #111;
-}
-body.dark .skill-card:nth-child(6) .skill-nivel{
-    background: #4920ff28;
-    border-color: #3417b4;
-    color: #3417b4;
-}
 
-svg{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-body.dark .icon-li {
-    display: none;
-}
-
-.icon-dark {
-    display: none;
-}
-
-body.dark .icon-dark {
-    display: block;
-}
-
-
-/* Proyectos site */
+/********************** Proyectos site **********************/
 
 .mas-proyect{
     margin-top: 8rem;
@@ -1119,7 +922,8 @@ body.dark .icon-dark {
 	grid-area: img-14;
 }
 
-/* Modal */
+
+/********************** Modal **********************/
 
 .eins-modal{
     padding: 4rem!important;
@@ -1167,7 +971,6 @@ body.dark .eins-modal-content{
     margin: 1rem 2rem 1rem 0;
 }
 
-
 .eins-modal-text p{
     padding: .5rem 0;
 }
@@ -1190,7 +993,7 @@ body.dark .eins-modal-text-3 {
 
 
 
-/* Loading */
+/********************** Loanding **********************/
 
 .loading-container{
     position: fixed;
@@ -1216,7 +1019,7 @@ body.dark .eins-modal-text-3 {
 
 
 
-/*Media Q*/
+/********************** Media Q **********************/
 
 @media (max-width: 990px) {
     html{
@@ -1244,20 +1047,6 @@ body.dark .eins-modal-text-3 {
     .skill-container{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 7rem;
-    }
-
-    #number {
-        font-weight: 600px;
-        
-    }
-
-    .skill-nivel{
-        width: 16.8rem;
-        height: 16.8rem;
-    }
-
-    circle{
-        stroke-width: 8px;
     }
 }
 
@@ -1376,23 +1165,7 @@ body.dark .eins-modal-text-3 {
     .site-header{
         padding: 1rem 8% ;
     }
-    .circle-mq{
-        display: flex;
-    }
 
-    .circle-pc{
-        display: none;
-    }
-
-    circle{
-        stroke-dasharray: 370;
-        stroke-dashoffset: 370;
-    }
-
-    .skill-nivel{
-        width: 13.89rem;
-        height: 13.89rem;
-    }
 
     .eins-modal-preview {
         max-width: 200px;
@@ -1411,6 +1184,11 @@ body.dark .eins-modal-text-3 {
     .eins-modal-text-2,
     .eins-modal-text-3 {
         font-size: 1.5rem;
+    }
+
+    .eins-modal-close{
+        font-size: 1.5rem;
+        width: 1.5rem;
     }
 }
 
@@ -1449,6 +1227,7 @@ body.dark .eins-modal-text-3 {
         margin: 1.3rem 2rem;
     }
 
+
     .contactos .row .columns .enviar{
         margin: 1rem auto;
     }
@@ -1479,17 +1258,16 @@ body.dark .eins-modal-text-3 {
         height: 35px;
     }
 
-    .skills-img {
-        height: 17rem;
+    .skill-container{
+        grid-gap: 7rem;
     }
 
-    .skill-nivel{
-        width: 15.28rem;
-        height: 15.28rem;
+    .skills-img {
+        height: 13rem;
     }
 
     .skill-name{
-        margin-top: 6rem;
+        margin-top: 1rem;
     }
 
     .projects__grid {
@@ -1522,11 +1300,12 @@ body.dark .eins-modal-text-3 {
 
     .skill-container{
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 7rem;
+        grid-gap: 4rem;
     }
-    .skill-nivel{
-        width: 15.25rem;
-        height: 15.25rem;
+
+    .skill h3{
+        width: 7rem;
+        margin-left: 1.7rem;
     }
 
     .eins-modal{
