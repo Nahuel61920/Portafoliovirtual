@@ -3,7 +3,7 @@
 :root{
     --green:#00e5fe;
     --secundario: #15b8ca;
-    --terciario: #2b756a;
+    --terciario: #00fefe;
     --black:#121f41;
     --light-color:#788E9C;
 
@@ -60,32 +60,69 @@ body.dark section .heading{
     color: var(--white);
 }
 
-.btn{
-    display: inline-block;
-    margin-top: 1rem;
-    border-radius: .5rem;
-    background: var(--green);
-    color: var(--black);
-    font-weight: 500;
-    font-size: 1.7rem;
+/**botones**/
+
+.custom-btn {
+    text-align: center;
+    justify-items: center;
+    width: 15rem;
+    height: 4rem;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,.0);
+    padding:.8rem 2rem .2rem 2rem;
     cursor: pointer;
-    padding: .8rem 3rem;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
 }
 
-.btn:hover{
-    background: var(--secundario);
+.btn {
+    background: var(--green);
+    color: var(--black);
+    z-index: 1;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.btn:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: var(--terciario);
+    border-radius: 5px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.6s ease;
+}
+.btn:hover {
+}
+.btn:hover:after {
+    left: 0;
+    width: 100%;
+}
+.btn:active {
+    top: 2px;
 }
 
 .btn-codigo {
-    display: inline-block;
-    margin-top: 1rem;
+    width: 18rem;
+    height: 4rem;
     border-radius: .5rem;
     border: 2px solid var(--black);
     color: var(--black);
-    font-weight: 500;
     font-size: 1.7rem;
+    font-weight: 700;
     cursor: pointer;
-    padding: .6rem 2.8rem;
+    padding: auto;
     background: transparent;
 }
 
@@ -100,6 +137,8 @@ body.dark .btn-codigo {
 }
 
 .cv{
+    text-align: center;
+    padding:.8rem 2rem .2rem 2rem;
     border: 2px solid var(--white);
     color: var(--white);
 }
@@ -528,6 +567,10 @@ body.dark .proyectos .proyectos-slider .caja .content h3{
     font-weight: bold;
 }
 
+.proyectos .proyectos-slider .caja .content a{
+    margin: .5rem;
+}
+
 .proyectos .proyectos-slider .caja .content .tecnologias{
     margin-bottom: 2rem;
 }
@@ -546,7 +589,7 @@ body.dark .proyectos .swiper .swiper-pagination-bullets .swiper-pagination-bulle
 
 .portafolio-btn{
     display: flex;
-    width: 18rem;
+    justify-content: center;
     margin: 2rem auto;
 }
 
@@ -1315,3 +1358,4 @@ body.dark .eins-modal-text-3 {
         padding: 1rem!important;
     }
 }
+
