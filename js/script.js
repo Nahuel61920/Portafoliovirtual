@@ -1,7 +1,30 @@
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.navbar');
 
+const buttons = document.getElementById('buttons');
+const textsToChange = document.querySelectorAll('[data-section]');
 
+const btnSwitch = document.querySelector("#switch");
+
+
+// Loader
+window.onload = () => {
+    if(window.scrollY > 0){
+    document.querySelector(".site-header").classList.add("activar")
+    }else document.querySelector(".site-header").classList.remove("activar")
+
+    fadeOut();
+}
+
+function loader(){
+    document.querySelector('.loading-container').classList.add('active');
+    }
+
+function fadeOut(){
+    setTimeout(loader, 1000);
+}
+
+// Nav
 menu.onclick = () => {
     navbar.classList.toggle("activar")
 }
@@ -14,27 +37,26 @@ window.onscroll = () => {
     navbar.classList.remove("activar")
 }
 
-window.onload = () => {
-    if(window.scrollY > 0){
-    document.querySelector(".site-header").classList.add("activar")
-    }else document.querySelector(".site-header").classList.remove("activar")
+//languge
+const changeLanguage = async language => {
+    const requestJson = await fetch(`language/${language}.json`);
+    const texts = await requestJson.json();
 
-    fadeOut();
-}
-
-
-function loader(){
-    document.querySelector('.loading-container').classList.add('active');
+    for (const textToChange of textsToChange) {
+        const section = textToChange.dataset.section;
+        const value = textToChange.dataset.value;
+        textToChange.textContent = texts[section][value];
     }
+};
 
-function fadeOut(){
-    setTimeout(loader, 2500);
-}
+buttons.addEventListener('click', e => {
+    const language = e.target.dataset.language;
+    if (language) {
+        changeLanguage(language);
+    }
+});
 
-
-const btnSwitch = document.querySelector("#switch");
-
-
+// Dark mode
 btnSwitch.addEventListener("click", () => {
     document.body.classList.toggle("dark");
     btnSwitch.classList.toggle("active");
@@ -54,7 +76,6 @@ if(localStorage.getItem("dark-mode") === "true"){
 }
 
 //Section
-
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
@@ -74,9 +95,7 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
-
-
-
+// Btn up
 $(document).ready(function(){
 	$(window).scroll(function(){
 		if($(this).scrollTop() > 0) {
@@ -93,55 +112,52 @@ $(document).ready(function(){
 	});
 });
 
+// Leer mas
+let btnHide = document.querySelector("#btn-hide");
+let parrafoActive = document.querySelector(".parrafo-active");
 
-var swiper = new Swiper(".proyectos-slider", {
-    grabCursor: true,
-    centeredSlides: true,  
-    spaceBetween: 20,
-    loop:true,
-    autoplay: {
-        delay: 5500,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable:true,
-    },
-    breakpoints: {
-        0: {
-        slidesPerView: 1,
-        },
-        768: {
-        slidesPerView: 2,
-        },
-        1024: {
-        slidesPerView: 3,
-        },
-    },
+btnHide.addEventListener("click", readMore);
+
+function readMore() {
+    parrafoActive.classList.toggle("show");
+
+    if (parrafoActive.classList.contains("show")) {
+        btnHide.innerHTML = "↑";
+    } else {
+        btnHide.innerHTML = "Read more";
+    }
+}
+
+// nav proyectos
+let btnWeb = document.querySelector("#btn-web"), btnApps = document.querySelector("#btn-apps"), btnGames = document.querySelector("#btn-games")
+let paginasWeb = document.querySelector("#paginas-web");
+let apps = document.querySelector("#apps");
+let games = document.querySelector("#games");
+
+btnWeb.addEventListener("click", (e) =>{
+    e.preventDefault();
+    paginasWeb.classList.remove("proyecto-none");
+    apps.classList.add("proyecto-none");
+    games.classList.add("proyecto-none");
+    btnWeb.classList.add("active");
+    btnApps.classList.remove("active");
+    btnGames.classList.remove("active");
 });
-
-
-const typed = new Typed('.typed', {
-    strings: [
-        '<i class="site-contacto"> Gmail </i> ',
-        '<i class="site-contacto"> WhatsApp </i> ', 
-        '<i class="site-contacto"> Instragram </i> ', 
-        '<i class="site-contacto"> Twitter </i>',
-        '<i class="site-contacto"> Linkedin </i>',
-        '<i class="site-contacto"> Github </i>'
-    ],
-    
-    stringsElement: '#cadenas-texto', 
-    typeSpeed: 75, 
-    startDelay: 1000, 
-    backSpeed: 75, 
-    smartBackspace: true, 
-    shuffle: false, 
-    backDelay: 1000,  
-    loop: true,  
-    loopCount: false, 
-    showCursor: true, 
-    cursorChar: '|', 
-    contentType: 'html', 
+btnApps.addEventListener("click", (e) =>{
+    e.preventDefault();
+    paginasWeb.classList.add("proyecto-none");
+    apps.classList.remove("proyecto-none");
+    games.classList.add("proyecto-none");
+    btnWeb.classList.remove("active");
+    btnApps.classList.add("active");
+    btnGames.classList.remove("active");
 });
-
+btnGames.addEventListener("click", (e) =>{
+    e.preventDefault();
+    paginasWeb.classList.add("proyecto-none");
+    apps.classList.add("proyecto-none");
+    games.classList.remove("proyecto-none");
+    btnWeb.classList.remove("active");
+    btnApps.classList.remove("active");
+    btnGames.classList.add("active");
+});

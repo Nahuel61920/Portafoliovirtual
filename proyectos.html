@@ -21,11 +21,15 @@
         </a>
 
         <nav class="navbar">
-            <a href="index.html">Inicio</a>
-            <a href="sobre-mi.html">Sobre mi</a>
-            <a href="index.html">servicios</a>
-            <a href="proyectos" class="active">proyectos</a>
-            <a href="index.html">contactos</a>
+            <a href="index.html" data-section="Nav" data-value="home">Inicio</a>
+            <a href="sobre-mi.html" data-section="Nav" data-value="aboult">Sobre mi</a>
+            <a href="#servicios" data-section="Nav" data-value="services">servicios</a>
+            <a href="proyectos.html" class="active" data-section="Nav" data-value="projects">proyectos</a>
+            <a href="#contactos" data-section="Nav" data-value="contact">contactos</a>
+            <div id="buttons">
+                <img src="https://flagicons.lipis.dev/flags/4x3/us.svg" alt="" data-language="en">
+                <img src="https://flagicons.lipis.dev/flags/4x3/es.svg" alt="" data-language="es">
+            </div>
         </nav>
 
         <div class="btns">
@@ -38,55 +42,103 @@
 
     
     <main>
-        <section class="proyectos mas-proyect" id="proyectos">
-            <h2 class="heading">Proyectos</h2 >
-                <div class="projects__grid">
+        <section class="proyectos mas-proyect">
+            <h2 class="heading" data-section="Nav" data-value="projects">Proyectos</h2 >
+				<nav class="navbar nav-proj">
+					<a href="#" class="active" data-section="Nav" data-value="site-web" id="btn-web">Páginas web</a>
+					<a href="#" id="btn-apps">Apps</a>
+					<a href="#" data-section="Nav" data-value="games" id="btn-games">Juegos</a>
+				</nav>
+                <div class="projects__grid" id="paginas-web">
                     <article class="projects__item">
-						<a data-modal-id="proyec-14"><img src="img/proyecto-14.JPG" alt="" class="projects__img"></a>
+						<a data-modal-id="proyec-14"><img src="img/proyecto-14.jpg" alt="" class="projects__img"></a>
+					</article>
+                    <article class="projects__item">
+						<a data-modal-id="proyec-15"><img src="img/proyecto-15.jpg" alt="" class="projects__img"></a>
 					</article>
 					<article class="projects__item">
-						<a data-modal-id="proyec-13"><img src="img/proyecto-13.JPG" alt="" class="projects__img"></a>
+						<a data-modal-id="proyec-16"><img src="img/proyecto-16.jpg" alt="" class="projects__img"></a>
 					</article>
+					<article class="projects__item">
+						<a data-modal-id="proyec-13"><img src="img/proyecto-13.jpg" alt="" class="projects__img"></a>
+					</article>
+					<article class="projects__item">
+						<a data-modal-id="proyec-12"><img src="img/proyecto-12.jpg" alt="" class="projects__img"></a>
+					</article>
+					<article class="projects__item">
+						<a data-modal-id="proyec-11"><img src="img/proyecto-11.jpg" alt="" class="projects__img"></a>
+					</article>
+					<article class="projects__item">
+						<a data-modal-id="proyec-10"><img src="img/proyecto-10.jpg" alt="" class="projects__img"></a>
+					</article>
+					<article class="projects__item">
+						<a data-modal-id="proyec-9"><img src="img/proyecto-9.jpg" alt="" class="projects__img"></a>
+					</article>
+                    <article class="projects__item">
+						<a data-modal-id="proyec-8"><img src="img/proyecto-8.jpg" alt="" class="projects__img"></a>
+					</article>
+                    <article class="projects__item">
+						<a data-modal-id="proyec-7"><img src="img/proyecto-7.jpg" alt="" class="projects__img"></a>
+					</article>
+                    <article class="projects__item">
+						<a data-modal-id="proyec-6"><img src="img/proyecto-6.jpg" alt="" class="projects__img"></a>
+					</article>
+                    <article class="projects__item">
+						<a data-modal-id="proyec-5"><img src="img/proyecto-5.jpg" alt="" class="projects__img"></a>
+					</article>
+                    <article class="projects__item">
+						<a data-modal-id="proyec-3"><img src="img/proyecto-3.jpg" alt="" class="projects__img"></a>
+					</article>
+                    <article class="projects__item">
+						<a data-modal-id="proyec-2"><img src="img/proyecto-2.jpg" alt="" class="projects__img"></a>
+					</article>
+				</div>
 
-					<article class="projects__item">
-						<a data-modal-id="proyec-12"><img src="img/proyecto-12.JPG" alt="" class="projects__img"></a>
-					</article>
 
-					<article class="projects__item">
-						<a data-modal-id="proyec-11"><img src="img/proyecto-11.JPG" alt="" class="projects__img"></a>
+				<div class="projects__grid proyecto-none" id="apps">
+                    <article class="projects__item">
+						<a data-modal-id="proyec-app-10"><img src="img/proyecto-app-10.jpg" alt="" class="projects__img"></a>
 					</article>
+					<article class="projects__item">
+						<a data-modal-id="proyec-app-9"><img src="img/proyecto-app-9.jpg" alt="" class="projects__img"></a>
+					</article>
+					<article class="projects__item">
+						<a data-modal-id="proyec-app-8"><img src="img/proyecto-app-8.jpg" alt="" class="projects__img"></a>
+					</article>
+					<article class="projects__item">
+						<a data-modal-id="proyec-app-7"><img src="img/proyecto-app-7.jpg" alt="" class="projects__img"></a>
+					</article>
+					<article class="projects__item">
+						<a data-modal-id="proyec-app-6"><img src="img/proyecto-app-6.jpg" alt="" class="projects__img"></a>
+					</article>
+					<article class="projects__item">
+						<a data-modal-id="proyec-app-5"><img src="img/proyecto-app-5.jpg" alt="" class="projects__img"></a>
+					</article>
+                    <article class="projects__item">
+						<a data-modal-id="proyec-app-4"><img src="img/proyecto-app-4.jpg" alt="" class="projects__img"></a>
+					</article>
+                    <article class="projects__item">
+						<a data-modal-id="proyec-app-3"><img src="img/proyecto-app-3.jpg" alt="" class="projects__img"></a>
+					</article>
+					<article class="projects__item">
+						<a data-modal-id="proyec-app-2"><img src="img/proyecto-app-2.jpg" alt="" class="projects__img"></a>
+					</article>
+                    <article class="projects__item">
+						<a data-modal-id="proyec-app-1"><img src="img/proyecto-app-1.jpg" alt="" class="projects__img"></a>
+					</article>
+				</div>
 
+				<div class="projects__grid proyecto-none" id="games">
+                    <article class="projects__item">
+						<a data-modal-id="proyec-game-1"><img src="img/proyecto-game-1.jpg" alt="" class="projects__img"></a>
+					</article>
 					<article class="projects__item">
-						<a data-modal-id="proyec-10"><img src="img/proyecto-10.JPG" alt="" class="projects__img"></a>
+						<a data-modal-id="proyec-game-2"><img src="img/proyecto-game-2.jpg" alt="" class="projects__img"></a>
 					</article>
-					
-					<article class="projects__item">
-						<a data-modal-id="proyec-9"><img src="img/proyecto-9.JPG" alt="" class="projects__img"></a>
-					</article>
-                    <article class="projects__item">
-						<a data-modal-id="proyec-8"><img src="img/proyecto-8.JPG" alt="" class="projects__img"></a>
-					</article>
-                    <article class="projects__item">
-						<a data-modal-id="proyec-7"><img src="img/proyecto-7.JPG" alt="" class="projects__img"></a>
-					</article>
-                    <article class="projects__item">
-						<a data-modal-id="proyec-6"><img src="img/proyecto-6.JPG" alt="" class="projects__img"></a>
-					</article>
-                    <article class="projects__item">
-						<a data-modal-id="proyec-5"><img src="img/proyecto-5.JPG" alt="" class="projects__img"></a>
-					</article>
-                    <article class="projects__item">
-						<a data-modal-id="proyec-4"><img src="img/proyecto-4.JPG" alt="" class="projects__img"></a>
-					</article>
-                    <article class="projects__item">
-						<a data-modal-id="proyec-3"><img src="img/proyecto-3.JPG" alt="" class="projects__img"></a>
-					</article>
-                    <article class="projects__item">
-						<a data-modal-id="proyec-2"><img src="img/proyecto-2.JPG" alt="" class="projects__img"></a>
-					</article>
-                    <article class="projects__item">
-						<a data-modal-id="proyec-1"><img src="img/proyecto-1.JPG" alt="" class="projects__img"></a>
-					</article>
+				</div>
+
+				<div class="btn-info">
+					<buttom class="custom-btn btn-codigo js-none" id="btn-hide"><span data-section="Aboult" data-value="btn-know-more">Saber más</span></buttom>
 				</div>
         </section>
     </main>
@@ -121,19 +173,44 @@
     </div>
     
 
+	<!-- Modal website -->
+	<div id="proyec-15" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+		<div class="eins-modal-content">
+			<div class="eins-modal-close"></div>
+			<div class="pw-content">
+				<div class="eins-modal-preview"><img src="img/proyecto-15-com.jpg" alt=""></div>
+				<div class="eins-modal-text">
+					<p data-section="Projec-site" data-value="projects-info-15-p1">Magical Effect, es un portafolio creado para una agencia desarrolladora de videos.</p>
+					<p data-section="Projec-site" data-value="projects-info-15-p2">Muestra los proyectos realizados a lo largo de los años a distintos tipos de clientes, nombra sus servicios y años de experiencia en la industria.</p>
+					<div class="eins-modal-text-2">
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/Magical-Effect/"target="_blank">https://magicaleffect.com</a>
+					</div>
+					<div class="eins-modal-text-3">
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
+						<div class="eins-modal-tec">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="">
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div id="proyec-14" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
 		<div class="eins-modal-content">
 			<div class="eins-modal-close"></div>
 			<div class="pw-content">
-				<div class="eins-modal-preview"><img src="img/proyecto-14-com.JPG" alt=""></div>
+				<div class="eins-modal-preview"><img src="img/proyecto-14-com.jpg" alt=""></div>
 				<div class="eins-modal-text">
-					<p>NeuroPanama, página coorporativa de la empresa en colaboración con otro diseñador web.   </p>
-					<p>Clínica enfocada a la neuropsicología. Tratamientos, asesorias y orientación para mejorar el funcionamiento cognitivo de la persona. </p>
+					<p data-section="Projec-site" data-value="projects-info-14-p1">Justice, página creada para firma de abogados.</p>
+					<p data-section="Projec-site" data-value="projects-info-14-p2">Enfocada en mostrar al cliente la valía, la experiencia y el profesionalismo de los abogados que pueden contratar, eligiendo la categoría de su caso en específico.</p>
 					<div class="eins-modal-text-2">
-						<span>Enlace:</span> <a href="https://nahuel61920.github.io/Justice"target="_blank">https://justice.com</a>
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/Justice"target="_blank">https://justice.com</a>
 					</div>
 					<div class="eins-modal-text-3">
-						<span>Tecnologías Utilizadas:</span> 
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
 						<div class="eins-modal-tec">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
@@ -147,19 +224,44 @@
 		</div>
 	</div>
 
+	<div id="proyec-16" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+		<div class="eins-modal-content">
+			<div class="eins-modal-close"></div>
+			<div class="pw-content">
+				<div class="eins-modal-preview"><img src="img/proyecto-16-com.jpg" alt=""></div>
+				<div class="eins-modal-text">
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Crystal Heart Store, es una tienda de ropa online.</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p2">Diseñada para que el cliente pueda buscar los productos de una manera muy rápida y fácil, pueda calcular el envió y pagar online.</p>
+					<div class="eins-modal-text-2">
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://crystalheart.empretienda.com.ar/"target="_blank">https://crystalheart.com</a>
+					</div>
+					<div class="eins-modal-text-3">
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
+						<div class="eins-modal-tec">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="">
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div id="proyec-13" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
 		<div class="eins-modal-content">
 			<div class="eins-modal-close"></div>
 			<div class="pw-content">
-				<div class="eins-modal-preview"><img src="img/proyecto-13-com.JPG" alt=""></div>
+				<div class="eins-modal-preview"><img src="img/proyecto-13-com.jpg" alt=""></div>
 				<div class="eins-modal-text">
-					<p>NeuroPanama, página coorporativa de la empresa en colaboración con otro diseñador web.   </p>
-					<p>Clínica enfocada a la neuropsicología. Tratamientos, asesorias y orientación para mejorar el funcionamiento cognitivo de la persona. </p>
+					<p data-section="Projec-site" data-value="projects-info-13-p1">Inspired Gamer, página creada para la venta de video juegos digitales y físicos.</p>
+					<p data-section="Projec-site" data-value="projects-info-13-p2">Desarrollada para que el cliente pueda elegir su consola ya sea PSP 5 O Xbox X y poder navegar en páginas exclusivas para cada consola.</p>
 					<div class="eins-modal-text-2">
-						<span>Enlace:</span> <a href="https://nahuel61920.github.io/InspiredGamer"target="_blank">https://inspired-gamer.com</a>
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/InspiredGamer"target="_blank">https://inspired-gamer.com</a>
 					</div>
 					<div class="eins-modal-text-3">
-						<span>Tecnologías Utilizadas:</span> 
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
 						<div class="eins-modal-tec">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
@@ -179,13 +281,13 @@
 			<div class="pw-content">
 				<div class="eins-modal-preview"><img src="img/proyecto-12-com.png" alt=""></div>
 				<div class="eins-modal-text">
-					<p>NeuroPanama, página coorporativa de la empresa en colaboración con otro diseñador web.   </p>
-					<p>Clínica enfocada a la neuropsicología. Tratamientos, asesorias y orientación para mejorar el funcionamiento cognitivo de la persona. </p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Every Running, página desarrollada para la venta de zapatillas unisex.</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Diseñada para que el cliente pueda elegir el modelo de zapatillas, observar cual se adapta mejor a su presupuesto y cuáles son las mejores valoradas por los compradores.</p>
 					<div class="eins-modal-text-2">
-						<span>Enlace:</span> <a href="https://nahuel61920.github.io/EveryRunning"target="_blank">https://every-running.com</a>
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/EveryRunning"target="_blank">https://every-running.com</a>
 					</div>
 					<div class="eins-modal-text-3">
-						<span>Tecnologías Utilizadas:</span> 
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
 						<div class="eins-modal-tec">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
@@ -205,13 +307,13 @@
 			<div class="pw-content">
 				<div class="eins-modal-preview"><img src="img/proyecto-11-com.png" alt=""></div>
 				<div class="eins-modal-text">
-					<p>NeuroPanama, página coorporativa de la empresa en colaboración con otro diseñador web.   </p>
-					<p>Clínica enfocada a la neuropsicología. Tratamientos, asesorias y orientación para mejorar el funcionamiento cognitivo de la persona. </p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Plus Anime, creada para reproducir o descargar los capítulos del anime que elijas.</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Cuenta con una gran variedad de Anime, tanto como estrenos recientes y los favoritos de la comunidad, también ostenta con películas del género en cuestión.</p>
 					<div class="eins-modal-text-2">
-						<span>Enlace:</span> <a href="https://nahuel61920.github.io/PlusAnime"target="_blank">https://plusanime.com</a>
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/PlusAnime"target="_blank">https://plusanime.com</a>
 					</div>
 					<div class="eins-modal-text-3">
-						<span>Tecnologías Utilizadas:</span> 
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
 						<div class="eins-modal-tec">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
@@ -230,13 +332,13 @@
 			<div class="pw-content">
 				<div class="eins-modal-preview"><img src="img/proyecto-10-com.png" alt=""></div>
 				<div class="eins-modal-text">
-					<p>NeuroPanama, página coorporativa de la empresa en colaboración con otro diseñador web.   </p>
-					<p>Clínica enfocada a la neuropsicología. Tratamientos, asesorias y orientación para mejorar el funcionamiento cognitivo de la persona. </p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Elegant Hand, página creada para la venta de relojes digitales y analógicos.</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Desarrollada para que el cliente pueda elegir buscar el reloj de su preferencia, ya que cuenta con una gran variedad de marcas y modeles. La página también cuenta con un modo nocturno para mas comodidad.</p>
 					<div class="eins-modal-text-2">
-						<span>Enlace:</span> <a href="https://nahuel61920.github.io/ElegantHand/"target="_blank">https://elegant-hand.com</a>
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/ElegantHand/"target="_blank">https://elegant-hand.com</a>
 					</div>
 					<div class="eins-modal-text-3">
-						<span>Tecnologías Utilizadas:</span> 
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
 						<div class="eins-modal-tec">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
@@ -255,13 +357,13 @@
 			<div class="pw-content">
 				<div class="eins-modal-preview"><img src="img/proyecto-9-com.jpg" alt=""></div>
 				<div class="eins-modal-text">
-					<p>NeuroPanama, página coorporativa de la empresa en colaboración con otro diseñador web.   </p>
-					<p>Clínica enfocada a la neuropsicología. Tratamientos, asesorias y orientación para mejorar el funcionamiento cognitivo de la persona. </p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Vida en papel, página creada para una librería.</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Diseñada para que el cliente pueda adquirir libros físicos o digitales, cuenta con una gran cantidad categoría para que sus lectores se sientan a gusto.</p>
 					<div class="eins-modal-text-2">
-						<span>Enlace:</span> <a href="https://nahuel61920.github.io/vida-en-papel"target="_blank">https://vida-en-papel.com</a>
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/vida-en-papel"target="_blank">https://vida-en-papel.com</a>
 					</div>
 					<div class="eins-modal-text-3">
-						<span>Tecnologías Utilizadas:</span> 
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
 						<div class="eins-modal-tec">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
@@ -278,15 +380,15 @@
 		<div class="eins-modal-content">
 			<div class="eins-modal-close"></div>
 			<div class="pw-content">
-				<div class="eins-modal-preview"><img src="img/proyecto-8-com.JPG" alt=""></div>
+				<div class="eins-modal-preview"><img src="img/proyecto-8-com.jpg" alt=""></div>
 				<div class="eins-modal-text">
-					<p>NeuroPanama, página coorporativa de la empresa en colaboración con otro diseñador web.   </p>
-					<p>Clínica enfocada a la neuropsicología. Tratamientos, asesorias y orientación para mejorar el funcionamiento cognitivo de la persona. </p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Shop Tec, un ecommerce desarrollado para la compra de productos tecnológicos.</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Ofrece una gran cantidad productos, como también la capacidad de navegar entre las diferentes categorías de tales productos.</p>
 					<div class="eins-modal-text-2">
-						<span>Enlace:</span> <a href="https://nahuel61920.github.io/shop-tec"target="_blank">https://shop-tec.com</a>
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/shop-tec"target="_blank">https://shop-tec.com</a>
 					</div>
 					<div class="eins-modal-text-3">
-						<span>Tecnologías Utilizadas:</span> 
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
 						<div class="eins-modal-tec">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
@@ -306,13 +408,13 @@
 			<div class="pw-content">
 				<div class="eins-modal-preview"><img src="img/proyecto-7-com.png" alt=""></div>
 				<div class="eins-modal-text">
-					<p>NeuroPanama, página coorporativa de la empresa en colaboración con otro diseñador web.   </p>
-					<p>Clínica enfocada a la neuropsicología. Tratamientos, asesorias y orientación para mejorar el funcionamiento cognitivo de la persona. </p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Power engine, es una página web de venta de automóviles.</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Desarrollada para que el cliente pueda adquirir el automóvil de sus sueños, usa en muchas de sus secciones un sistema de slider para facilitar la interacción de la página con los usuarios.</p>
 					<div class="eins-modal-text-2">
-						<span>Enlace:</span> <a href="https://nahuel61920.github.io/Power-Engine"target="_blank">https://power-engine.com</a>
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/Power-Engine"target="_blank">https://power-engine.com</a>
 					</div>
 					<div class="eins-modal-text-3">
-						<span>Tecnologías Utilizadas:</span> 
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
 						<div class="eins-modal-tec">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
@@ -331,13 +433,13 @@
 			<div class="pw-content">
 				<div class="eins-modal-preview"><img src="img/proyecto-6-com.png" alt=""></div>
 				<div class="eins-modal-text">
-					<p>NeuroPanama, página coorporativa de la empresa en colaboración con otro diseñador web.   </p>
-					<p>Clínica enfocada a la neuropsicología. Tratamientos, asesorias y orientación para mejorar el funcionamiento cognitivo de la persona. </p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Spider-Man fan page, es un proyecto desarrollado en honor a Spider-Man.</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Ofrece una gran variedad de información sobre Spider-Man y sus variantes del multi-verso, así también como datos y curiosidades de sus enemigos y aliados.</p>
 					<div class="eins-modal-text-2">
-						<span>Enlace:</span> <a href="https://nahuel61920.github.io/Spider-Man"target="_blank">https://spider-man-fans-page.com</a>
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/Spider-Man"target="_blank">https://spider-man-fans-page.com</a>
 					</div>
 					<div class="eins-modal-text-3">
-						<span>Tecnologías Utilizadas:</span> 
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
 						<div class="eins-modal-tec">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
@@ -356,65 +458,39 @@
 			<div class="pw-content">
 				<div class="eins-modal-preview"><img src="img/proyecto-5-com.png" alt=""></div>
 				<div class="eins-modal-text">
-					<p>NeuroPanama, página coorporativa de la empresa en colaboración con otro diseñador web.   </p>
-					<p>Clínica enfocada a la neuropsicología. Tratamientos, asesorias y orientación para mejorar el funcionamiento cognitivo de la persona. </p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">PremierFood, página creada para la venta de comida rápida.</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Diseñada para atraer visualmente al usuario, con preparaciones culinarias de excelente calidad y con una interfaz de transiciones atractivas.</p>
 					<div class="eins-modal-text-2">
-						<span>Enlace:</span> <a href="https://nahuel61920.github.io/PremierFood"target="_blank">https://premierfood.com</a>
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/PremierFood"target="_blank">https://premierfood.com</a>
 					</div>
 					<div class="eins-modal-text-3">
-						<span>Tecnologías Utilizadas:</span> 
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
 						<div class="eins-modal-tec">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="">
 							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="">
 							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="">
-
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>	
-
-	<div id="proyec-4" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-		<div class="eins-modal-content">
-			<div class="eins-modal-close"></div>
-			<div class="pw-content">
-				<div class="eins-modal-preview"><img src="img/proyecto-4.JPG" alt=""></div>
-				<div class="eins-modal-text">
-					<p>NeuroPanama, página coorporativa de la empresa en colaboración con otro diseñador web.   </p>
-					<p>Clínica enfocada a la neuropsicología. Tratamientos, asesorias y orientación para mejorar el funcionamiento cognitivo de la persona. </p>
-					<div class="eins-modal-text-2">
-						<span>Enlace:</span> <a href="https://nahuel61920.github.io/Pelis-Web"target="_blank">https://pelis-web.com</a>
-					</div>
-					<div class="eins-modal-text-3">
-						<span>Tecnologías Utilizadas:</span> 
-						<div class="eins-modal-tec">
-							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
-							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
-							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>	
+	</div>		
 
 	<div id="proyec-3" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
 		<div class="eins-modal-content">
 			<div class="eins-modal-close"></div>
 			<div class="pw-content">
-				<div class="eins-modal-preview"><img src="img/proyecto-3.JPG" alt=""></div>
+				<div class="eins-modal-preview"><img src="img/proyecto-3.jpg" alt=""></div>
 				<div class="eins-modal-text">
-					<p>NeuroPanama, página coorporativa de la empresa en colaboración con otro diseñador web.   </p>
-					<p>Clínica enfocada a la neuropsicología. Tratamientos, asesorias y orientación para mejorar el funcionamiento cognitivo de la persona. </p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">ProgramCoffe, un blog diseñado para informar sobre las mejores recetas para tu café.</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Ofrece una gran cantidad de información sobre las preparaciones perfectas para un buen café, tanto como la temperatura a la cual hay que prepararlo, como los mejores granos de café.</p>
 					<div class="eins-modal-text-2">
-						<span>Enlace:</span> <a href="https://nahuel61920.github.io/Blog-Coffe"target="_blank">https://blog-coffe.com</a>
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/Blog-Coffe"target="_blank">https://ProgramCoffe.com</a>
 					</div>
 					<div class="eins-modal-text-3">
-						<span>Tecnologías Utilizadas:</span> 
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
 						<div class="eins-modal-tec">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
@@ -429,15 +505,15 @@
 		<div class="eins-modal-content">
 			<div class="eins-modal-close"></div>
 			<div class="pw-content">
-				<div class="eins-modal-preview"><img src="img/proyecto-2.JPG" alt=""></div>
+				<div class="eins-modal-preview"><img src="img/proyecto-2.jpg" alt=""></div>
 				<div class="eins-modal-text">
-					<p>NeuroPanama, página coorporativa de la empresa en colaboración con otro diseñador web.   </p>
-					<p>Clínica enfocada a la neuropsicología. Tratamientos, asesorias y orientación para mejorar el funcionamiento cognitivo de la persona. </p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Justice, página creada para firma de abogados</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Desarrollada para que el cliente pueda elegir su consola y poder navegar en páginas exclusivas para cada consola,  </p>
 					<div class="eins-modal-text-2">
-						<span>Enlace:</span> <a href="https://nahuel61920.github.io/Bienes-Raices"target="_blank">https://bienes-raices.com</a>
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/Bienes-Raices"target="_blank">https://bienes-raices.com</a>
 					</div>
 					<div class="eins-modal-text-3">
-						<span>Tecnologías Utilizadas:</span> 
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
 						<div class="eins-modal-tec">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
@@ -446,26 +522,149 @@
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 
-	<div id="proyec-1" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+	<!-- Modal app -->
+	<div id="proyec-app-10" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
 		<div class="eins-modal-content">
 			<div class="eins-modal-close"></div>
 			<div class="pw-content">
-				<div class="eins-modal-preview"><img src="img/proyecto-1.JPG" alt=""></div>
+				<div class="eins-modal-preview"><img src="img/proyecto-app-10.jpg" alt=""></div>
 				<div class="eins-modal-text">
-					<p>NeuroPanama, página coorporativa de la empresa en colaboración con otro diseñador web.   </p>
-					<p>Clínica enfocada a la neuropsicología. Tratamientos, asesorias y orientación para mejorar el funcionamiento cognitivo de la persona. </p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Administrador de clientes</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Te autoriza a sacar un turno para reparar tu celular, puedes editar el turno si lo deseas.</p>
 					<div class="eins-modal-text-2">
-						<span>Enlace:</span> <a href="https://nahuel61920.github.io/InspiredGamer"target="_blank">https://InspiredGamer.com</a>
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/Administrador-de-Clientes/"target="_blank">https://nahuel61920.github.io/Administrador-de-Clientes/</a>
 					</div>
 					<div class="eins-modal-text-3">
-						<span>Tecnologías Utilizadas:</span> 
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
+						<div class="eins-modal-tec">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<div id="proyec-app-9" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+		<div class="eins-modal-content">
+			<div class="eins-modal-close"></div>
+			<div class="pw-content">
+				<div class="eins-modal-preview"><img src="img/proyecto-app-9.jpg" alt=""></div>
+				<div class="eins-modal-text">
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Pomodoro app</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Te permite agregar una tarea para completarla en 25 minutos y al finalizar descansar 5 minutos.</p>
+					<div class="eins-modal-text-2">
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/Pomodoro/"target="_blank">https://nahuel61920.github.io/Pomodoro/</a>
+					</div>
+					<div class="eins-modal-text-3">
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
 						<div class="eins-modal-tec">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
 							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<div id="proyec-app-8" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+		<div class="eins-modal-content">
+			<div class="eins-modal-close"></div>
+			<div class="pw-content">
+				<div class="eins-modal-preview"><img src="img/proyecto-app-8.jpg" alt=""></div>
+				<div class="eins-modal-text">
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Gastos semanales</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Puedes calcular los gastos que relazaras, teniendo un presupuesto que elijas.</p>
+					<div class="eins-modal-text-2">
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/ElegantHand/"target="_blank">https://elegant-hand.com</a>
+					</div>
+					<div class="eins-modal-text-3">
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
+						<div class="eins-modal-tec">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
 							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="proyec-app-7" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+		<div class="eins-modal-content">
+			<div class="eins-modal-close"></div>
+			<div class="pw-content">
+				<div class="eins-modal-preview"><img src="img/proyecto-app-7.jpg" alt=""></div>
+				<div class="eins-modal-text">
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Cotizar seguro</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Te permite calcular el seguro de tu automóvil, dependiendo del año y del seguro que elijas.</p>
+					<div class="eins-modal-text-2">
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/Cotizador-de-seguros/"target="_blank">https://nahuel61920.github.io/Cotizador-de-seguros/</a>
+					</div>
+					<div class="eins-modal-text-3">
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
+						<div class="eins-modal-tec">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="proyec-app-6" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+		<div class="eins-modal-content">
+			<div class="eins-modal-close"></div>
+			<div class="pw-content">
+				<div class="eins-modal-preview"><img src="img/proyecto-app-6.jpg" alt=""></div>
+				<div class="eins-modal-text">
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Carrito de cursos</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Te permite agregar un curso al carrito, junto con su descripción y valor.</p>
+					<div class="eins-modal-text-2">
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/Carrito-Cursos/"target="_blank">https://nahuel61920.github.io/Carrito-Cursos/</a>
+					</div>
+					<div class="eins-modal-text-3">
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
+						<div class="eins-modal-tec">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="proyec-app-5" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+		<div class="eins-modal-content">
+			<div class="eins-modal-close"></div>
+			<div class="pw-content">
+				<div class="eins-modal-preview"><img src="img/proyecto-app-5.jpg" alt=""></div>
+				<div class="eins-modal-text">
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Generador de tweets</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Podes crear tweets y eliminarlos a voluntad.</p>
+					<div class="eins-modal-text-2">
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/Tweets/"target="_blank">https://nahuel61920.github.io/Tweets/</a>
+					</div>
+					<div class="eins-modal-text-3">
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
+						<div class="eins-modal-tec">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="">
 							<img src="https://cms-assets.tutsplus.com/uploads/users/780/posts/39427/image-upload/68747470733a2f2f6769746875622e7375726d6f6e2e6d652f696d616765732f636f6d6d6f6e2f7377697065722d6c6f676f2e737667.svg" alt="">
 						</div>
 					</div>
@@ -474,9 +673,155 @@
 		</div>
 	</div>	
 
+	<div id="proyec-app-4" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+		<div class="eins-modal-content">
+			<div class="eins-modal-close"></div>
+			<div class="pw-content">
+				<div class="eins-modal-preview"><img src="img/proyecto-app-4.jpg" alt=""></div>
+				<div class="eins-modal-text">
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Buscador de autos</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Te permite filtrar autos ya sea, por su marca, año, precio, puertas, transmisión y color.</p>
+					<div class="eins-modal-text-2">
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/Buscador-de-autos"target="_blank">https://nahuel61920.github.io/Buscador-de-autos</a>
+					</div>
+					<div class="eins-modal-text-3">
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
+						<div class="eins-modal-tec">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="proyec-app-3" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+		<div class="eins-modal-content">
+			<div class="eins-modal-close"></div>
+			<div class="pw-content">
+				<div class="eins-modal-preview"><img src="img/proyecto-app-3.jpg" alt=""></div>
+				<div class="eins-modal-text">
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Agujas en la miel formulario</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Formulario estilo clásico, que te permite ordenar un libro.</p>
+					<div class="eins-modal-text-2">
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/FormularioJs-Clasico/"target="_blank">https://nahuel61920.github.io/formularioJs-clasico/</a>
+					</div>
+					<div class="eins-modal-text-3">
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
+						<div class="eins-modal-tec">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>		
+
+	<div id="proyec-app-2" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+		<div class="eins-modal-content">
+			<div class="eins-modal-close"></div>
+			<div class="pw-content">
+				<div class="eins-modal-preview"><img src="img/proyecto-app-2.jpg" alt=""></div>
+				<div class="eins-modal-text">
+					<p data-section="Projec-site" data-value="projects-info-16-p1">To-do list App</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Te permite añadir tareas, márcalas como completadas y ordenarlas de pendientes a completas.</p>
+					<div class="eins-modal-text-2">
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/To-do-list/"target="_blank">https://nahuel61920.github.io/to-do-list/</a>
+					</div>
+					<div class="eins-modal-text-3">
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
+						<div class="eins-modal-tec">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<div id="proyec-app-1" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+		<div class="eins-modal-content">
+			<div class="eins-modal-close"></div>
+			<div class="pw-content">
+				<div class="eins-modal-preview"><img src="img/proyecto-app-1.jpg" alt=""></div>
+				<div class="eins-modal-text">
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Calcular gastos de viaje</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Calculadora que te permite presupuestar lo que vas a gastar en un viaje al destino que le indiques.</p>
+					<div class="eins-modal-text-2">
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/Calcular-gastos-de-viaje/"target="_blank">https://nahuel61920.github.io/calcular-gastos-de-viaje/</a>
+					</div>
+					<div class="eins-modal-text-3">
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
+						<div class="eins-modal-tec">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal game -->
+	<div id="proyec-game-2" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+		<div class="eins-modal-content">
+			<div class="eins-modal-close"></div>
+			<div class="pw-content">
+				<div class="eins-modal-preview"><img src="img/proyecto-game-2.jpg" alt=""></div>
+				<div class="eins-modal-text">
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Juego de la serpiente</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Inspirado en el clásico juego arcade de los 90.</p>
+					<div class="eins-modal-text-2">
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/Juego-de-la-Serpiente/"target="_blank">https://nahuel61920.github.io/Juego-de-la-Serpiente/</a>
+					</div>
+					<div class="eins-modal-text-3">
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
+						<div class="eins-modal-tec">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<div id="proyec-game-1" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+		<div class="eins-modal-content">
+			<div class="eins-modal-close"></div>
+			<div class="pw-content">
+				<div class="eins-modal-preview"><img src="img/proyecto-game-1.jpg" alt=""></div>
+				<div class="eins-modal-text">
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Preguntas y respuestas</p>
+					<p data-section="Projec-site" data-value="projects-info-16-p1">Cuenta con más de 400 preguntas con múltiples opciones para responder.</p>
+					<div class="eins-modal-text-2">
+						<span data-section="Projec-site" data-value="projects-link">Enlace:</span> <a href="https://nahuel61920.github.io/Preguntas-y-Respuestas/"target="_blank">https://nahuel61920.github.io/Preguntas-y-Respuestas/</a>
+					</div>
+					<div class="eins-modal-text-3">
+						<span data-section="Projec-site" data-value="projects-tec">Tecnologías Utilizadas:</span> 
+						<div class="eins-modal-tec">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/script-02.js"></script>
+    <script src="js/script.js"></script>
 	<script src="js/eins-modal.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

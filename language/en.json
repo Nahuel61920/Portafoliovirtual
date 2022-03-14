@@ -1,0 +1,88 @@
+{
+  "Nav": {
+    "home": "Home",
+    "aboult": "Aboult me",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact",
+
+    "site-web": "websites",
+    "games": "games"
+  },
+  "Home": {
+    "greeting": "Hellow",
+    "name": "I am Nahuel Carrizo",
+    "rol": "Front-end developer"
+  },
+  "Aboult": {
+    "im": "who I am",
+    "description": "My name is Esteban Carrizo and I specialize in Web Developer",
+    "my-description": "I have been dedicated to web design and development for 1 year, I am constantly learning the technologies that I already master, and I seek to learn new technologies to enrich my skills",
+    "years": "Age:",
+    "from": "From:",
+    "btn-know-more": "Read more",
+    "tools": "Tools"
+  },
+  "Services": {
+    "design": "Design UX/UI",
+    "design-info": "Design of attractive interfaces for both web and mobile users, making the most of the brand or product that the client wishes to exploit on their website",
+    "development": "Web development",
+    "development-info": "Creation of well-structured web pages, good responsive design, attractive color palette, with interactions that give the user satisfaction when browsing the website.",
+    "marketing": "Digital marketing",
+    "marketing-info": "Prepare a strategy and objectives for the promotion of the brand provided by the client, using the internet or other platforms to promote products and services of the brand in question.",
+    "maintenance": "Web maintenance",
+    "maintenance-info": "Complete maintenance of web pages to detect and solve errors, update content whether text, photos, web design elements, add new functions, etc.",
+    "seo": "Web positioning (SEO)",
+    "seo-info": "Web positioning through SEO, so your website appears in the main search results according to your business, both in Google, Bing, or other internet search engines",
+    "optimization": "Website optimization",
+    "optimization-info": "Complete optimization of your web page, improving loading speed, using optimized images, a good URL, to give a better experience to users who visit the website"
+  },
+  "Projects": {
+    "btn-more-projects": "More projects"
+  },
+  "Footer": {
+    "footer-info": "Page created by Nahuel61920"
+  },
+  "Aboult-site": {
+    "aboult-info-1": "Hi, I'm Esteban Nahuel Carrizo, a student at the Technological University of Tucumán; I consider myself a person passionate about programming and web development since in 2020 I had the opportunity to get to know this world of the front-end and I was able to create my first web page only using HTML and CSS from there, I felt a great passion for web development, since you can do amazing things knowing how to use HTML, CSS, JavaScript and to this day I still feel that same passion when I create a web page.",
+    "aboult-info-2": "I consider myself a self-taught person since I like to be constantly learning day by day, both new technologies and new development methods that help me polish and raise my level of learning.",
+    "aboult-info-3": "I have experience working as a freelance web designer and developer, which gave me the opportunity to work on many interesting projects, adapting to the client's needs and budget, which allowed me to improve my skills and knowledge; Additionally, I have also had the opportunity to be part of some online and face-to-face courses that helped me enrich my skills and learn a little more about this beautiful world of web development.",
+    "btn-cv": "Download cv",
+    "aboult-skills-1": "More than a year of professional experience in this language, allows me to perform without problems in the industry",
+    "aboult-skills-2": "More than a year of work experience in this language, I use it daily to develop web designs and interfaces",
+    "aboult-skills-3": "A year of experience using it in the front-end branch, allowed me to familiarize myself with the language, and include it in my work projects",
+    "aboult-skills-4": "One year using this preprocessor in the professional field, I include it in many of my projects since it allows me a better structured code",
+    "aboult-skills-5": "Less than a year using this framework, even so, I used it in countless work projects, which allowed me to get to know it for the most part",
+    "aboult-skills-6": "A year using this bookstore in the personal and work environment, it is one of the bookstores that I use and manipulate the most"
+  },
+  "Projec-site": {
+    "projects-link": "Link:",
+    "projects-tec": "Used technology:",
+    "projects-info-16-p1": "Crystal Heart Store, is an online clothing store.",
+    "projects-info-16-p2": "Designed so that the customer can search for products in a very fast and easy way, can calculate the shipment and pay online.",
+    "projects-info-15-p1": "Magical Effect is a portfolio created for a video development agency.",
+    "projects-info-15-p2": "It shows the projects carried out over the years for different types of clients, names their services and years of experience in the industry.",
+    "projects-info-14-p1": "Justice, page created for law firm.",
+    "projects-info-14-p2": "Focused on showing the client the value, experience and professionalism of the lawyers they can hire, choosing the category of their specific case.",
+    "projects-info-13-p1": "Inspired Gamer, page created for the sale of digital and physical video games.",
+    "projects-info-13-p2": "Developed so that the client can choose their console, be it PSP 5 or Xbox X, and be able to browse exclusive pages for each console.",
+    "projects-info-12-p1": "Magical Effect is a portfolio created for a video development agency.",
+    "projects-info-12-p2": "It shows the projects carried out over the years for different types of clients, names their services and years of experience in the industry.",
+    "projects-info-11-p1": "Magical Effect is a portfolio created for a video development agency.",
+    "projects-info-11-p2": "It shows the projects carried out over the years for different types of clients, names their services and years of experience in the industry.",
+    "projects-info-10-p1": "Magical Effect is a portfolio created for a video development agency.",
+    "projects-info-10-p2": "It shows the projects carried out over the years for different types of clients, names their services and years of experience in the industry.",
+    "projects-info-9-p1": "Magical Effect is a portfolio created for a video development agency.",
+    "projects-info-9-p2": "It shows the projects carried out over the years for different types of clients, names their services and years of experience in the industry.",
+    "projects-info-8-p1": "Magical Effect is a portfolio created for a video development agency.",
+    "projects-info-8-p2": "It shows the projects carried out over the years for different types of clients, names their services and years of experience in the industry.",
+    "projects-info-7-p1": "Magical Effect is a portfolio created for a video development agency.",
+    "projects-info-7-p2": "It shows the projects carried out over the years for different types of clients, names their services and years of experience in the industry.",
+    "projects-info-6-p1": "Magical Effect is a portfolio created for a video development agency.",
+    "projects-info-6-p2": "It shows the projects carried out over the years for different types of clients, names their services and years of experience in the industry.",
+    "projects-info-5-p1": "Magical Effect is a portfolio created for a video development agency.",
+    "projects-info-5-p2": "It shows the projects carried out over the years for different types of clients, names their services and years of experience in the industry.",
+    "projects-info-4-p1": "Magical Effect is a portfolio created for a video development agency.",
+    "projects-info-4-p2": "It shows the projects carried out over the years for different types of clients, names their services and years of experience in the industry."
+  }
+}

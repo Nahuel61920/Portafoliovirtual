@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Portafolio Nahuel61920</title>
 </head>
 <body>
@@ -22,11 +24,15 @@
         </a>
 
         <nav class="navbar">
-            <a href="#inicio">Inicio</a>
-            <a href="#sobre-mi">Sobre mi</a>
-            <a href="#servicios">servicios</a>
-            <a href="#proyectos">proyectos</a>
-            <a href="#contactos">contactos</a>
+            <a href="#inicio" data-section="Nav" data-value="home">Inicio</a>
+            <a href="#sobre-mi" data-section="Nav" data-value="aboult">Sobre mi</a>
+            <a href="#servicios" data-section="Nav" data-value="services">servicios</a>
+            <a href="#proyectos" data-section="Nav" data-value="projects">proyectos</a>
+            <a href="#contactos" data-section="Nav" data-value="contact">contactos</a>
+            <div id="buttons">
+                <img src="https://flagicons.lipis.dev/flags/4x3/us.svg" alt="" data-language="en">
+                <img src="https://flagicons.lipis.dev/flags/4x3/es.svg" alt="" data-language="es">
+            </div>
         </nav>
 
         <div class="btns">
@@ -39,35 +45,38 @@
 
     <div class="contenido">
         <section class="inicio" id="inicio">
-            <div class="titulo">
-                <p>Hola</p>
-                <h1>Soy Nahuel Carrizo</h1>
-                <p>Front-end Developer</p>
+            <div class="titulo" >
+                <p data-section="Home" data-value="greeting" data-aos="fade-up" data-aos-delay="1500">Hola</p>
+                <h1 data-section="Home" data-value="name" data-aos="fade-up" data-aos-delay="1750">Soy Nahuel Carrizo</h1>
+                <p data-section="Home" data-value="rol" data-aos="fade-up" data-aos-delay="2000">Front-end Developer</p>
             </div>
         </section>
     </div>
 
     <main>
         <section class="sobre-mi" id="sobre-mi">
-            <h2 class="heading">Sobre mi</h2>
+            <h2 class="heading" data-section="Nav" data-value="aboult">Sobre mi</h2>
 
             <div class="row container">
                 <div class="columns" data-aos="fade-right" data-aos-delay="300">
-                    <h3>Quien soy</h3>
-                    <h4>Mi nombre es Esteban Carrizo y me especializo en Web Developer</h4>
-                    <p>Me dedico desde hace 1 año al diseño y desarrollo web, estoy en constante aprendizaje en las tecnologías que ya domino, y busco aprender nuevas tecnologías para enriquecer mis habilidades</p>
+                    <h3 data-section="Aboult" data-value="im">Quien soy</h3>
+                    <h4 data-section="Aboult" data-value="description">Mi nombre es Esteban Carrizo y me especializo en Web Developer</h4>
+                    <p data-section="Aboult" data-value="my-description">Me dedico desde hace 1 año al diseño y desarrollo web, estoy en constante aprendizaje en las tecnologías que ya domino, y busco aprender nuevas tecnologías para enriquecer mis habilidades</p>
                     <ul>
                         <li>
-                            <p><span>Edad:</span> 22</p>
+                            <p><span data-section="Aboult" data-value="years">Edad:</span> 22</p>
                         </li>
                         <li>
                             <p><span>Email:</span> estebancarrizo619@gmail.com</p>
                         </li>
                         <li>
-                            <p><span>Desde:</span> Tucumán, Argentina</p>
+                            <p><span data-section="Aboult" data-value="from">Desde:</span> Tucumán, Argentina</p>
                         </li>
                     </ul>
-                    <a href="sobre-mi.html" class="custom-btn btn-codigo"><span>Saber mas</span></a>
+                    <div class="mas-info">
+                        <a href="cv/final.docx" download="final.docx" class="custom-btn btn" data-section="Aboult-site" data-value="btn-cv">Descargar CV</a>
+                        <a href="sobre-mi.html" class="custom-btn btn-codigo"><span data-section="Aboult" data-value="btn-know-more">Saber más</span></a>
+                    </div>
                 </div>
                 <div class="columns col-skill" data-aos="fade-left" data-aos-delay="500">
                     <h3>skills</h3>
@@ -118,7 +127,7 @@
                             <h3>Angular</h3>
                         </div>
                     </div>
-                    <h4>Herramientas</h4>
+                    <h4 data-section="Aboult" data-value="tools">Herramientas</h4>
                     <div class="skill">
                         <div>
                             <img alt="figma" class="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" title=""/" />
@@ -141,52 +150,50 @@
             </div>
         </section>
 
-
-
         <section class="servicios" id="servicios">
-            <h2 class="heading">Servicios</h2>
+            <h2 class="heading" data-section="Nav" data-value="services">Servicios</h2>
             <div class="row">
-                <div class="columns aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                <div class="columns" data-aos="fade-up" data-aos-delay="200">
                     <i class="fas fa-drafting-compass"></i>
-                    <h3>Diseño UX/UI</h3>
-                    <p>Diseño de interfaz atractivas para usuarios tanto en web como en móvil, aprovechando al máximo la marca o el producto que el cliente dese explotar en su sitio web</p>
+                    <h3 data-section="Services" data-value="design">Diseño UX/UI</h3>
+                    <p data-section="Services" data-value="design-info">Diseño de interfaz atractivas para usuarios tanto en web como en móvil, aprovechando al máximo la marca o el producto que el cliente dese explotar en su sitio web</p>
                 </div>
-                <div class="columns aos-init aos-animate" data-aos="fade-up" data-aos-delay="250">
+                <div class="columns" data-aos="fade-up" data-aos-delay="300">
                     <i class="fas fa-laptop"></i>
-                    <h3>Desarrollo WEB</h3>
-                    <p>Creación de páginas web, bien estructuradas, buen diseño responsivo, paleta de colores atractivas, con interacciones que le den al usuario satisfacción cuando navegue por el sitio web.</p>
+                    <h3 data-section="Services" data-value="development">Desarrollo WEB</h3>
+                    <p data-section="Services" data-value="development-info">Creación de páginas web, bien estructuradas, buen diseño responsivo, paleta de colores atractivas, con interacciones que le den al usuario satisfacción cuando navegue por el sitio web.</p>
                 </div>
-                <div class="columns aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <div class="columns" data-aos="fade-up" data-aos-delay="400">
                     <i class="fas fa-chart-line"></i>
-                    <h3>Marketing digitals</h3>
-                    <p>Preparar una estrategia y objetivos para la promoción de la marca que nos proporcione el cliente, utilizando internet u otras plataformas para promover productos y servicios de la marca en cuestión.</p>
+                    <h3 data-section="Services" data-value="marketing">Marketing digitals</h3>
+                    <p data-section="Services" data-value="marketing-info">Preparar una estrategia y objetivos para la promoción de la marca que nos proporcione el cliente, utilizando internet u otras plataformas para promover productos y servicios de la marca en cuestión.</p>
                 </div>
-                <div class="columns aos-init aos-animate" data-aos="fade-up" data-aos-delay="350">
+                <div class="columns" data-aos="fade-up" data-aos-delay="200">
                     <i class="fas fa-wrench"></i>
-                    <h3>Mantenimiento web</h3>
-                    <p>Mantenimiento completo de páginas web para detectar y solucionar errores, actualización de contenido ya sean textos, fotos, elementos de diseño web, añadir nuevas funciones, etc.</p>
+                    <h3 data-section="Services" data-value="maintenance">Mantenimiento web</h3>
+                    <p data-section="Services" data-value="maintenance-info">Mantenimiento completo de páginas web para detectar y solucionar errores, actualización de contenido ya sean textos, fotos, elementos de diseño web, añadir nuevas funciones, etc.</p>
                 </div>
-                <div class="columns aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                <div class="columns" data-aos="fade-up" data-aos-delay="300">
                     <i class="fas fa-search"></i>
-                    <h3>Posicionamiento web (SEO)</h3>
-                    <p>Posicionamiento web mediante SEO, así tu pagina web aparezca en los principales resultados de búsqueda acorde a tu negocio, tanto en Google, Bing, u otros buscadores de internet</p>
+                    <h3 data-section="Services" data-value="seo">Posicionamiento web (SEO)</h3>
+                    <p data-section="Services" data-value="seo-info">Posicionamiento web mediante SEO, así tu pagina web aparezca en los principales resultados de búsqueda acorde a tu negocio, tanto en Google, Bing, u otros buscadores de internet</p>
                 </div>
-                <div class="columns aos-init aos-animate" data-aos="fade-up" data-aos-delay="450">
+                <div class="columns" data-aos="fade-up" data-aos-delay="400">
                     <i class="fas fa-tachometer-alt"></i>
-                    <h3>Optimización web</h3>
-                    <p>Optimización completa de tu pagina web, mejorando la velocidad de carga, usando imágenes optimizadas,, un buen URL, para dar una mejor experiencia a los usuarios que visiten el sitio web </p>
+                    <h3 data-section="Services" data-value="optimization">Optimización web</h3>
+                    <p data-section="Services" data-value="optimization-info">Optimización completa de tu pagina web, mejorando la velocidad de carga, usando imágenes optimizadas,, un buen URL, para dar una mejor experiencia a los usuarios que visiten el sitio web </p>
                 </div>
             </div>
         </section>   
         
         <section class="proyectos" id="proyectos">
-            <h2 class="heading">Proyectos</h2 >
+            <h2 class="heading" data-section="Nav" data-value="projects">Proyectos</h2 >
             <div data-aos="fade-right" data-aos-delay="300" class="proyect-site">
                 <div class="swiper mySwiper proyectos-slider">
 
                     <div class="swiper-wrapper">
                         <div class="swiper-slide caja">
-                            <img src="./img/proyecto-7.JPG" alt="">
+                            <img src="./img/proyecto-7.jpg" alt="">
                             <div class="content">
                                 <h3>Power Engine</h3>
                                 <p>
@@ -198,13 +205,13 @@
                                     <span>-</span> JavaScript
                                     <span>-</span> Swiper Js
                                 </p>
-                                <a href="https://nahuel61920.github.io/Power-Engine/" class="custom-btn btn" target="_blank"><span>Ver demo</span></a>
-                                <a href="https://github.com/Nahuel61920/Power-Engine" class="custom-btn btn-codigo" target="_blank"><span>codigo github</span></a>
+                                <a href="https://nahuel61920.github.io/Power-Engine/" class="custom-btn btn" target="_blank"><span>Demo</span></a>
+                                <a href="https://github.com/Nahuel61920/Power-Engine" class="custom-btn btn-codigo" target="_blank">Repository</a>
                             </div>
                         </div>
             
                         <div class="swiper-slide caja">
-                            <img src="./img/proyecto-6.JPG" alt="">
+                            <img src="./img/proyecto-6.jpg" alt="">
                             <div class="content">
                                 <h3>Spider-Man fan page</h3>
                                 <p>
@@ -216,13 +223,13 @@
                                     <span>-</span> JavaScript
                                     <span>-</span> Bootstrap
                                 </p>
-                                <a href="https://nahuel61920.github.io/Spider-Man/" class="custom-btn btn" target="_blank"><span>Ver demo</span></a>
-                                <a href="https://github.com/Nahuel61920/Spider-Man" class="custom-btn btn-codigo" target="_blank">codigo github</a>
+                                <a href="https://nahuel61920.github.io/Spider-Man/" class="custom-btn btn" target="_blank"><span>Demo</span></a>
+                                <a href="https://github.com/Nahuel61920/Spider-Man" class="custom-btn btn-codigo" target="_blank">Repository</a>
                             </div>
                         </div>
             
                         <div class="swiper-slide caja">
-                            <img src="./img/proyecto-12.JPG" alt="">
+                            <img src="./img/proyecto-12.jpg" alt="">
                             <div class="content">
                                 <h3>EveryRunnig</h3>
                                 <p>
@@ -234,13 +241,13 @@
                                     <span>-</span> JavaScript
                                     <span>-</span> Bootstrap
                                 </p>
-                                <a href="https://nahuel61920.github.io/Bienes-Raices/" class="custom-btn btn" target="_blank"><span>Ver demo</span></a>
-                                <a href="https://github.com/Nahuel61920/Bienes-Raices" class="custom-btn btn-codigo" target="_blank">codigo github</a>
+                                <a href="https://nahuel61920.github.io/Bienes-Raices/" class="custom-btn btn" target="_blank"><span>Demo</span></a>
+                                <a href="https://github.com/Nahuel61920/Bienes-Raices" class="custom-btn btn-codigo" target="_blank">Repository</a>
                             </div>
                         </div>
             
                         <div class="swiper-slide caja">
-                            <img src="./img/proyecto-5.JPG" alt="">
+                            <img src="./img/proyecto-5.jpg" alt="">
                             <div class="content">
                                 <h3>Premier Food</h3>
                                 <p>
@@ -252,13 +259,13 @@
                                     <span>-</span> JavaScript
                                     <span>-</span> Sass
                                 </p>
-                                <a href="https://nahuel61920.github.io/PremierFood/" class="custom-btn btn" target="_blank"><span>Ver demo</span></a>
-                                <a href="https://github.com/Nahuel61920/PremierFood" class="custom-btn btn-codigo" target="_blank">codigo github</a>
+                                <a href="https://nahuel61920.github.io/PremierFood/" class="custom-btn btn" target="_blank"><span>Demo</span></a>
+                                <a href="https://github.com/Nahuel61920/PremierFood" class="custom-btn btn-codigo" target="_blank">Repository</a>
                             </div>
                         </div>
     
                         <div class="swiper-slide caja">
-                            <img src="./img/proyecto-8.JPG" alt="">
+                            <img src="./img/proyecto-8.jpg" alt="">
                             <div class="content">
                                 <h3>ShopTec</h3>
                                 <p>
@@ -271,13 +278,13 @@
                                     <span>-</span> JavaScript
                                     <span>-</span> Swiper Js
                                 </p>
-                                <a href="https://nahuel61920.github.io/shop-tec/" class="custom-btn btn" target="_blank"><span>Ver demo</span></a>
-                                <a href="https://github.com/Nahuel61920/shop-tec" class="custom-btn btn-codigo" target="_blank">codigo github</a>
+                                <a href="https://nahuel61920.github.io/shop-tec/" class="custom-btn btn" target="_blank"><span>Demo</span></a>
+                                <a href="https://github.com/Nahuel61920/shop-tec" class="custom-btn btn-codigo" target="_blank">Repository</a>
                             </div>
                         </div>
     
                         <div class="swiper-slide caja">
-                            <img src="./img/proyecto-10.JPG" alt="">
+                            <img src="./img/proyecto-10.jpg" alt="">
                             <div class="content">
                                 <h3>Elegant Hand</h3>
                                 <p>
@@ -289,13 +296,13 @@
                                     <span>-</span> JavaScript
                                     <span>-</span> Swiper Js
                                 </p>
-                                <a href="https://nahuel61920.github.io/ElegantHand/ " class="custom-btn btn" target="_blank"><span>Ver demo</span></a>
-                                <a href="https://github.com/Nahuel61920/ElegantHand" class="custom-btn btn-codigo" target="_blank">codigo github</a>
+                                <a href="https://nahuel61920.github.io/ElegantHand/ " class="custom-btn btn" target="_blank"><span>Demo</span></a>
+                                <a href="https://github.com/Nahuel61920/ElegantHand" class="custom-btn btn-codigo" target="_blank">Repository</a>
                             </div>
                         </div>
     
                         <div class="swiper-slide caja">
-                            <img src="./img/proyecto-9.JPG" alt="">
+                            <img src="./img/proyecto-9.jpg" alt="">
                             <div class="content">
                                 <h3>Vida en papel</h3>
                                 <p>
@@ -307,13 +314,13 @@
                                     <span>-</span> JavaScript
                                     <span>-</span> Swiper Js
                                 </p>
-                                <a href="https://nahuel61920.github.io/vida-en-papel/ " class="custom-btn btn" target="_blank"><span>Ver demo</span></a>
-                                <a href="https://github.com/Nahuel61920/vida-en-papel" class="custom-btn btn-codigo" target="_blank">codigo github</a>
+                                <a href="https://nahuel61920.github.io/vida-en-papel/ " class="custom-btn btn" target="_blank"><span>Demo</span></a>
+                                <a href="https://github.com/Nahuel61920/vida-en-papel" class="custom-btn btn-codigo" target="_blank">Repository</a>
                             </div>
                         </div>
             
                         <div class="swiper-slide caja">
-                            <img src="./img/proyecto-11.JPG" alt="">
+                            <img src="./img/proyecto-11.jpg" alt="">
                             <div class="content">
                                 <h3>Plus Anime</h3>
                                 <p>
@@ -325,65 +332,95 @@
                                     <span>-</span> JavaScript
                                     <span>-</span> Swiper Js
                                 </p>
-                                <a href="https://nahuel61920.github.io/PlusAnime/" class="custom-btn btn" target="_blank"><span>Ver demo</span></a>
-                                <a href="https://github.com/Nahuel61920/PlusAnime" class="custom-btn btn-codigo" target="_blank">codigo github</a>
+                                <a href="https://nahuel61920.github.io/PlusAnime/" class="custom-btn btn" target="_blank"><span>Demo</span></a>
+                                <a href="https://github.com/Nahuel61920/PlusAnime" class="custom-btn btn-codigo" target="_blank">Repository</a>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
-                <a href="proyectos.html" class="custom-btn btn-codigo portafolio-btn">Mas proyectos</a>
+                <a href="proyectos.html" class="custom-btn btn-codigo portafolio-btn" id="btn-hide" data-section="Projects" data-value="btn-more-projects">Más proyectos</a>
             </div>
         </section>
 
         <section class="contactos" id="contactos">
 
-            <h2 class="heading">Contactos</h2>
-            <h3 class="titulo">Contactame por:  <span class="typed"></span></h3>
+            <h2 class="heading" data-section="Nav" data-value="contact">Contactos</h2>
+            <h3 class="titulo">Contact:  <span class="typed"></span></h3>
 
-            <div class="row">
-                <div class="columns"  data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="" class="logo-contacto">
-                    <div class="enviar">
-                        <h3>gmail</h3>
-                        <a href="mailto:estebancarrizo619@gmail.com" class="custom-btn btn" target="_blank">Enviar</a>
+            <div class="icons">
+                <a href="mailto:estebancarrizo619@gmail.com" data-aos="zoom-in">
+                    <div class="layer">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fab fas fa-envelope"></span>
                     </div>
-                </div>
-                <div class="columns"  data-aos="fade-up" data-aos-delay="250">
-                    <img src="https://gcc.ec/site/wp-content/uploads/2020/11/whatsapp.png" alt="" class="logo-contacto">
-                    <div class="enviar">
-                        <h3>WhatsApp</h3>
-                        <a href="https://api.whatsapp.com/send?phone=5493815360966" class="custom-btn btn" target="_blank">Enviar</a>
+                    <div class="text">
+                        Gmail
                     </div>
-                </div>
-                <div class="columns"  data-aos="fade-up" data-aos-delay="300">
-                    <img src="https://i.pinimg.com/originals/3b/21/c7/3b21c7efd2ba9c119fb8d361acacc31d.png" alt="" class="logo-contacto">
-                    <div class="enviar">
-                        <h3>Instagram</h3>
-                        <a href="https://www.instagram.com/nahuelcarrizolc/" class="custom-btn btn" target="_blank">Enviar</a>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=5493815360966" data-aos="zoom-in">
+                    <div class="layer">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fab fa-whatsapp"></span>
                     </div>
-                </div>
-                <div class="columns"  data-aos="fade-up" data-aos-delay="350">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="" class="logo-contacto">
-                    <div class="enviar">
-                        <h3>Twitter</h3>
-                        <a href="#" class="custom-btn btn">Sigueme</a>
+                    <div class="text">
+                        Whatsapp
                     </div>
+                </a>
+                <a href="https://www.instagram.com/nahuelcarrizolc/" data-aos="zoom-in">
+                    <div class="layer">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fab fa-instagram"></span>
                     </div>
-                <div class="columns"  data-aos="fade-up" data-aos-delay="400">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="" class="logo-contacto">
-                    <div class="enviar">
-                        <h3>Linkedin</h3>
-                        <a href="https://www.linkedin.com/in/esteban-nahuel-carrizo-69715422b/" class="custom-btn btn" target="_blank">Sigueme</a>
+                    <div class="text">
+                        Instagram
                     </div>
+                </a>
+                <a href="#" data-aos="zoom-in">
+                    <div class="layer">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fab fa-twitter"></span>
                     </div>
-                <div class="columns"  data-aos="fade-up" data-aos-delay="450">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="" class="logo-contacto invertido">
-                    <div class="enviar">
-                        <h3>Github</h3>
-                        <a href="https://github.com/Nahuel61920/" class="custom-btn btn" target="_blank">Sigueme</a>
+                    <div class="text">
+                        Twitter
                     </div>
+                </a>
+                <a href="https://www.linkedin.com/in/esteban-nahuel-carrizo-69715422b/" data-aos="zoom-in">
+                    <div class="layer">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fab fa-linkedin-in"></span>
                     </div>
+                    <div class="text">
+                        Linkedin
+                    </div>
+                </a>
+                <a href="https://github.com/Nahuel61920/" data-aos="zoom-in">
+                    <div class="layer">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fab fa-github-square"></span>
+                    </div>
+                    <div class="text">
+                        GitHub
+                    </div>
+                </a>
             </div>
         </section>
     </main>
@@ -399,7 +436,7 @@
     <footer class="footer">
         <div class="site-footer">
             <div class="copyright">
-                <p>Pagina creada por Nahuel61920</p>
+                <p data-section="Footer" data-value="footer-info">Pagina creada por Nahuel61920</p>
                 <p>&copy; 2022. All Rights Reserved.</p>
             </div>
             <div class="redes-sociales">
@@ -419,6 +456,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/typed-swipper.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
 

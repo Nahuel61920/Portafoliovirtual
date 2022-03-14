@@ -1,0 +1,88 @@
+{
+  "Nav": {
+    "home": "Inicio",
+    "aboult": "Sobre mi",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "contact": "Contactos",
+
+    "site-web": "Páginas web",
+    "games": "juegos"
+  },
+  "Home": {
+    "greeting": "Hola",
+    "name": "Soy Nahuel Carrizo",
+    "rol": "Front-end developer"
+  },
+  "Aboult": {
+    "im": "Quien soy",
+    "description": "Mi nombre es Esteban Carrizo y me especializo en Web Developer",
+    "my-description": "Me dedico desde hace 1 año al diseño y desarrollo web, estoy en constante aprendizaje en las tecnologías que ya domino, y busco aprender nuevas tecnologías para enriquecer mis habilidades",
+    "years": "Edad:",
+    "from": "Desde:",
+    "btn-know-more": "Saber más",
+    "tools": "Herramientas"
+  },
+  "Services": {
+    "design": "Diseño UX/UI",
+    "design-info": "Diseño de interfaz atractivas para usuarios tanto en web como en móvil, aprovechando al máximo la marca o el producto que el cliente dese explotar en su sitio web",
+    "development": "Desarrollo WEB",
+    "development-info": "Creación de páginas web, bien estructuradas, buen diseño responsivo, paleta de colores atractivas, con interacciones que le den al usuario satisfacción cuando navegue por el sitio web.",
+    "marketing": "Marketing digitals",
+    "marketing-info": "Preparar una estrategia y objetivos para la promoción de la marca que nos proporcione el cliente, utilizando internet u otras plataformas para promover productos y servicios de la marca en cuestión.",
+    "maintenance": "Mantenimiento web",
+    "maintenance-info": "Mantenimiento completo de páginas web para detectar y solucionar errores, actualización de contenido ya sean textos, fotos, elementos de diseño web, añadir nuevas funciones, etc.",
+    "seo": "Posicionamiento web (SEO)",
+    "seo-info": "Posicionamiento web mediante SEO, así tu pagina web aparezca en los principales resultados de búsqueda acorde a tu negocio, tanto en Google, Bing, u otros buscadores de internet",
+    "optimization": "Optimización web",
+    "optimization-info": "Optimización completa de tu pagina web, mejorando la velocidad de carga, usando imágenes optimizadas,, un buen URL, para dar una mejor experiencia a los usuarios que visiten el sitio web "
+  },
+  "Projects": {
+    "btn-more-projects": "Más proyectos"
+  },
+  "Footer": {
+    "footer-info": "Pagina creada por Nahuel61920"
+  },
+  "Aboult-site": {
+    "aboult-info-1": "Hola soy Esteban Nahuel Carrizo, estudiante de la Universidad Tecnológica de Tucumán; Me considero una persona apasionada por la programación y el desarrollo web dado que en 2020 tuve la oportunidad conocer este mundo del front-end y pude crear mi primera página web solo usando HTML y CSS desde allí, sentí una gran pasión por el desarrollo web, ya que puedes hacer cosas impresionantes sabiendo cómo usar HTML, CSS, JavaScript y hasta el día de hoy sigo sintiendo esa misma pasión cuando creo una página web.",
+    "aboult-info-2": "Me considero una persona autodidacta dado que me gusta estar en constante aprendizaje día a día, tanto como de nuevas tecnologías, como de nuevos métodos de desarrollo que me ayuden a pulir y elevar mi nivel de aprendizaje.",
+    "aboult-info-3": "Tengo experiencia trabajando como diseñador y desarrollador web freelance, lo cual me dio la oportunidad de trabajar en bastantes proyectos interesantes, adaptándome a las necesidades y presupuesto del cliente lo que me permitió mejorar mis habilidades y conocimientos; adicionalmente también he tenido la oportunidad de formar parte de algunos cursos en línea y de manera presencial que me ayudaron a enriquecer mis capacidades y poder conocer un poco más de este hermoso mundo del desarrollo web.",
+    "btn-cv": "Descargar cv",
+    "aboult-skills-1": "Más de un año de experiencia profesional en este lenguaje, me permiten desempeñarme sin problemas en la industria",
+    "aboult-skills-2": "Más de un año de experiencia laboral en este lenguaje, lo utilizo diariamente para desarrollar diseños web e interfases",
+    "aboult-skills-3": "Un año de experiencia usándolo en la rama del front-end, me permitieron familiarizarme con el lenguaje, e incluirlo en mis proyectos laborales",
+    "aboult-skills-4": "Un año usando este preprocesador en el ámbito profesional, lo incluyo en mucho de mis proyectos ya que me permite un código mejor estructurado",
+    "aboult-skills-5": "Menos de un año utilizando este framework, aun así, lo utilice en incontables proyectos laborales, que me permitieron conocerlo en su mayoría",
+    "aboult-skills-6": "Un año usando esta librería en el ámbito personal y laboral, es de las librería que más empleo y manipulo"
+  },
+  "Projec-site": {
+    "projects-link": "Enlace:",
+    "projects-tec": "Tecnologías Utilizadas:",
+    "projects-info-16-p1": "Crystal Heart Store, es una tienda de ropa online.",
+    "projects-info-16-p2": "Diseñada para que el cliente pueda buscar los productos de una manera muy rápida y fácil, pueda calcular el envió y pagar online.",
+    "projects-info-15-p1": "Magical Effect, es un portafolio creado para una agencia desarrolladora de videos.",
+    "projects-info-15-p2": "Muestra los proyectos realizados a lo largo de los años a distintos tipos de clientes, nombra sus servicios y años de experiencia en la industria.",
+    "projects-info-14-p1": "Justice, página creada para firma de abogados.",
+    "projects-info-14-p2": "Enfocada en mostrar al cliente la valía, la experiencia y el profesionalismo de los abogados que pueden contratar, eligiendo la categoría de su caso en específico.",
+    "projects-info-13-p1": "Inspired Gamer, página creada para la venta de video juegos digitales y físicos.",
+    "projects-info-13-p2": "Desarrollada para que el cliente pueda elegir su consola ya sea PSP 5 O Xbox X y poder navegar en páginas exclusivas para cada consola.",
+    "projects-info-12-p1": "Magical Effect is a portfolio created for a video development agency.",
+    "projects-info-12-p2": "It shows the projects carried out over the years for different types of clients, names their services and years of experience in the industry.",
+    "projects-info-11-p1": "Magical Effect is a portfolio created for a video development agency.",
+    "projects-info-11-p2": "It shows the projects carried out over the years for different types of clients, names their services and years of experience in the industry.",
+    "projects-info-10-p1": "Magical Effect is a portfolio created for a video development agency.",
+    "projects-info-10-p2": "It shows the projects carried out over the years for different types of clients, names their services and years of experience in the industry.",
+    "projects-info-9-p1": "Magical Effect is a portfolio created for a video development agency.",
+    "projects-info-9-p2": "It shows the projects carried out over the years for different types of clients, names their services and years of experience in the industry.",
+    "projects-info-8-p1": "Magical Effect is a portfolio created for a video development agency.",
+    "projects-info-8-p2": "It shows the projects carried out over the years for different types of clients, names their services and years of experience in the industry.",
+    "projects-info-7-p1": "Magical Effect is a portfolio created for a video development agency.",
+    "projects-info-7-p2": "It shows the projects carried out over the years for different types of clients, names their services and years of experience in the industry.",
+    "projects-info-6-p1": "Magical Effect is a portfolio created for a video development agency.",
+    "projects-info-6-p2": "It shows the projects carried out over the years for different types of clients, names their services and years of experience in the industry.",
+    "projects-info-5-p1": "Magical Effect is a portfolio created for a video development agency.",
+    "projects-info-5-p2": "It shows the projects carried out over the years for different types of clients, names their services and years of experience in the industry.",
+    "projects-info-4-p1": "Magical Effect is a portfolio created for a video development agency.",
+    "projects-info-4-p2": "It shows the projects carried out over the years for different types of clients, names their services and years of experience in the industry."
+  }
+}
