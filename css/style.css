@@ -872,7 +872,8 @@ body.dark .footer .site-footer .redes-sociales a{
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
 }
 
 .sobre-mi-info p{
