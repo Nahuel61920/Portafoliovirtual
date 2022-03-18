@@ -18,9 +18,7 @@
 
 *{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    outline: none; 
     border: none;
     text-decoration: none;
     text-transform: capitalize;
@@ -205,6 +203,10 @@ body.dark .logo span {
 #buttons{
     display: inline-block;
     position: fixed;
+}
+
+#buttons img{
+    height: 2rem;
 }
 
 .navbar img{
@@ -1258,6 +1260,7 @@ body.dark .eins-modal-text-3 {
     #buttons img{
         position: relative;
         margin-right: 2rem;
+        height: 2.5rem;
     }
 
     .switch {
