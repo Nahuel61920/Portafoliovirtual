@@ -120,7 +120,6 @@ body.dark section .heading{
     font-size: 1.7rem;
     font-weight: 700;
     cursor: pointer;
-    padding: auto;
     background: transparent;
 }
 
@@ -430,7 +429,7 @@ section .row .columns a{
 section .row .col-skill h4{
     font-size: 2.7rem;
     color: var(--black);
-    margin-bottom: 3.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .skill{
@@ -438,34 +437,34 @@ section .row .col-skill h4{
     flex-wrap: wrap;
 }
 
-.skill h3{
+.skill h5{
     background: var(--black);
     text-align: center;
     border-radius: .5rem;
     padding: .5rem 0;
-    font-size: 1.1rem!important;
+    font-size: 1.1rem;
     width: 10rem;
     margin: 0 1.5rem;
     transform: translate(0px, -75px);
     opacity: 0;
     transition: .5s ease all;
-    color: var(--white)!important;
+    color: var(--white);
 }
 
-body.dark .skill h3{
+body.dark .skill h5{
     background: var(--white);
-    color: #000!important;
+    color: #000;
 }
 
-.skill>div:hover h3 {
-    transform: translate(0px, -113px);
+.skill>div:hover h5 {
+    transform: translate(0px, -110px);
     opacity: 1;
 }
 
 .icons-skils {
     width: 7rem;
     height: 7rem;
-    margin: .1rem 3rem;
+    margin: .7rem 3rem;
 }
 
 section .row .columns .skill img:hover {
@@ -1174,7 +1173,7 @@ body.dark .eins-modal-text-3 {
         top: 0rem;
     }
 
-    .skill h3{
+    .skill h5{
         margin: 0 0.5rem;
     }
 
@@ -1301,8 +1300,24 @@ body.dark .eins-modal-text-3 {
         margin: 1.7rem 3rem;
     }
 
-    .skill h3{
+    section .row .col-skill h4{
+        margin-bottom: 3.5rem;
+    }
+    
+    .skill h5{
         margin: 0 0.7rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+        transform: translate(0px, -110px);
+        opacity: 1;
+    }
+    
+    .skill>div:hover h5 {
+        transform: translate(0px, -110px);
+    }
+    
+    section .row .columns .skill img:hover {
+        transform: scale(1);
     }
 
     .skill{
@@ -1419,6 +1434,22 @@ body.dark .eins-modal-text-3 {
     .skill-container{
         grid-gap: 7rem;
     }
+    .skill h5{
+        background-color: var(--white);
+        color: #000;
+        font-size: 1.5rem;
+        font-weight: bold;
+        transform: translate(0px, -90px);
+    }
+
+    body.dark .skill h5{
+        background-color: rgb(14, 12, 12);
+        color: #fff;
+    }
+
+    .skill>div:hover h5 {
+        transform: translate(0px, -90px);
+    }
 
     .sobre-mi-info .btn-info {
         display: flex;
@@ -1476,7 +1507,7 @@ body.dark .eins-modal-text-3 {
         grid-gap: 4rem;
     }
 
-    .skill h3{
+    .skill h5{
         width: 7rem;
         margin-left: 1.7rem;
     }
