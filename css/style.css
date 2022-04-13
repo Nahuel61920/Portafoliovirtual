@@ -188,13 +188,7 @@ body.dark .logo span {
 }
 .navbar a{
     font-size: 1.7rem;
-    margin: 0 3rem 0 0;
-    color: var(--black);
-    position: relative;
-}
-
-.navbar a{
-    font-size: 1.7rem;
+    font-weight: bold;
     margin: 0 3rem 0 0;
     color: var(--black);
     position: relative;
@@ -350,6 +344,52 @@ body.dark .navbar .active-link::before {
     font-size: 4.5rem;
     color: var(--green)
 }
+
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 2px solid #fff;
+  position: absolute;
+  left: 49%;
+  bottom: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid #fff;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::before {
+  top: 30%;
+  animation-delay: 0.3s;
+}
+
+@keyframes scroll-down {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+
 
 
 /********************** Sobre Mi **********************/
@@ -832,14 +872,19 @@ body.dark .footer {
     padding: 2rem 0;
 }
 
-.site-footer .redes-sociales{
+.redes-sociales{
     padding: 2rem 0;
 }
 
-.site-footer .redes-sociales a{
+.redes-sociales a{
     font-size: 3rem;
     padding-left: 4rem;
     color: var(--black);
+}
+
+.titulo .redes-sociales a{
+    padding: 2rem;
+    color: var(--green);
 }
 
 
@@ -1140,7 +1185,7 @@ body.dark .eins-modal-text-3 {
     height:100%;
     width: 100%;
     z-index: 10000;
-    background:#fff;
+    background:#000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1171,6 +1216,11 @@ body.dark .eins-modal-text-3 {
         width: 28px;
         height: 28px;
         top: 0rem;
+    }
+
+    .scroll-down {
+        left: 48%;
+        bottom: 50px;
     }
 
     .skill h5{
@@ -1500,6 +1550,9 @@ body.dark .eins-modal-text-3 {
     
     .inicio .titulo h1{
         font-size: 3.5rem;
+    }
+    .scroll-down {
+        display: none;
     }
 
     .skill-container{

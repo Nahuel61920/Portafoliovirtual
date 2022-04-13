@@ -21,7 +21,7 @@ function loader(){
     }
 
 function fadeOut(){
-    setTimeout(loader, 1000);
+    setTimeout(loader, 2500);
 }
 
 // Nav
