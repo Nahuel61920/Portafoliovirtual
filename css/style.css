@@ -321,7 +321,8 @@ body.dark .navbar .active-link::before {
 
 .contenido {
     background: url(../img/inicio.png);
-    min-height: 690px;
+    width: 100vw;
+    height: 100vh;
     background-position: center center;
 	background-size: cover;
 }
@@ -331,7 +332,7 @@ body.dark .navbar .active-link::before {
 }
 
 .inicio .titulo{
-    margin: 27rem auto 0 auto;
+    margin: 20rem auto 0 auto;
     text-align: center;
 }
 
@@ -1185,7 +1186,7 @@ body.dark .eins-modal-text-3 {
     height:100%;
     width: 100%;
     z-index: 10000;
-    background:#000;
+    background:rgb(12, 12, 12);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1196,7 +1197,7 @@ body.dark .eins-modal-text-3 {
 }
 
 .loading-container img{
-    height:20rem;
+    height:100%;
 }
 
 .js-none{
