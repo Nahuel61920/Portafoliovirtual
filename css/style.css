@@ -6,6 +6,7 @@
     --terciario: #00fefe;
     --black:#121f41;
     --light-color:#788E9C;
+    --light-color-white:#353e44;
     --white: #fff;
 
     --borde: .1rem solid rgba(0, 0, 0, .1);
@@ -143,6 +144,16 @@ body.dark .btn-codigo {
 body.dark .btn-codigo:hover {
     background: var(--white);
     color: var(--black);
+}
+
+
+/********************** Particles **********************/
+
+#particles-js {
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: -1;
 }
 
 
@@ -625,8 +636,12 @@ body.dark .proyectos .proyectos-slider .caja .content h3{
 .proyectos .proyectos-slider .caja .content p{
     font-size: 1.6rem;;
     padding-top: 1.5rem;
-    color: var(--light-color);
+    color: var(--light-color-white);
     text-transform: none!important;
+}
+
+body.dark .proyectos .proyectos-slider .caja .content p{
+    color: var(--light-color);
 }
 
 .proyectos .proyectos-slider .caja .content p span{
@@ -672,7 +687,7 @@ body.dark .proyectos .swiper .swiper-pagination-bullets .swiper-pagination-bulle
     font-size: 2.5rem;
     font-weight: normal;
     margin-bottom: 4rem;
-    color: var(--light-color);
+    color: var(--light-color-white);
     text-transform: none;
 }
 
@@ -852,6 +867,7 @@ body.dark .cm-up .cm-icon {
 /********************** Footer **********************/
 
 .footer {
+    background: var(--white);
     border-top: 3px solid #f1f1f1ee;
     box-shadow: var(--box-shadow);
     padding: 2rem 8% ;
