@@ -474,7 +474,7 @@ section .row .columns .mas-info{
     flex-direction: column;
 }
 
-section .row .columns a{
+.sobre-mi .row .columns a{
     margin: 2rem 1rem 1rem 0;
 }
 
@@ -534,56 +534,56 @@ body.dark main section .row .columns .skill img:hover {
 
 /********************** Servicios **********************/
 
-#servicios .row{
+.servicios .row{
     text-align: center;
 }
 
-#servicios .row .columns{
+.servicios .row .columns{
     box-shadow: var(--box-shadow);
     border: var(--borde);
     border-bottom: 1rem solid var(--white);
     margin: 0.5rem;
 }
 
-#servicios .row .columns:hover{
+.servicios .row .columns:hover{
     background: var(--black);
     color: var(--light-color);
     border-bottom: 1rem solid var(--black);
 }
 
-body.dark #servicios .row .columns{
+body.dark .servicios .row .columns{
     background: #111;
     border-bottom: 1rem solid #111;
     color: var(--light-color);
 }
 
-body.dark #servicios .row .columns:hover{
+body.dark .servicios .row .columns:hover{
     border-bottom: 1rem solid var(--green);
 }
 
-#servicios .row i{
+.servicios .row i{
     font-size: 3rem;
     margin-bottom: 2rem;
     color: var(--black);
 }
 
-#servicios .row .columns:hover i{
+.servicios .row .columns:hover i{
     color: var(--light-color);
 }
 
-body.dark #servicios .row i{
+body.dark .servicios .row i{
     color: var(--light-color);
 }
 
-body.dark #servicios .row .columns:hover i{
+body.dark .servicios .row .columns:hover i{
     color: var(--green);
 }
 
-body.dark #servicios .row h3{
-    color: var(--white);
+body.dark .servicios .row h3{
+    color: var(--white)!important;
 }
 
-#servicios .row .columns:hover h3{
+.servicios .row .columns:hover h3{
     color: var(--white);
 }
 
@@ -1022,8 +1022,247 @@ body.dark .skill-info{
     color: var(--light-color);
 }
 
+/********************** Counter up ********************/
+.counter-up{
+  min-height: 50vh;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.counter-up::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.8);
+}
+.counter-up .content{
+  z-index: 1;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.counter-up .content .box{
+  border: 1px dashed rgba(255,255,255,0.6);
+  width: calc(25% - 30px);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 20px;
+}
+.content .box .icon{
+  font-size: 48px;
+  color: #e6e6e6;
+}
+.content .box .counter{
+  font-size: 50px;
+  font-weight: 500;
+  color: #f2f2f2;
+  font-family: sans-serif;
+}
+.content .box .text{
+  font-weight: 400;
+  color: #ccc;
+}
+@media screen and (max-width: 1036px) {
+  .counter-up{
+    padding: 50px 50px 0 50px;
+  }
+  .counter-up .content .box{
+    width: calc(50% - 30px);
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .counter-up .content .box{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .wrapper{
+    padding: 20px;
+  }
+  .counter-up{
+    padding: 30px 20px 0 20px;
+  }
+}
+/********************** Services seccion **********************/
 
-/********************** Proyectos site **********************/
+.site-services .row{
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.site-services .row .columns{
+    box-shadow: var(--box-shadow);
+    border: var(--borde);
+    margin: 0.5rem;
+}
+
+body.dark .site-services .row .columns{
+    background: #111111;
+}
+
+.site-services .columns h3{
+    text-transform: uppercase;
+}
+
+.site-services .columns .sub-title{
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.site-services .columns .numero span {
+    position: relative;
+    font-size: 2.5rem;
+    top: -.7em;
+}
+
+.site-services .columns .numero{
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 1;
+    color: var(--black);
+}
+
+body.dark .site-services .columns .numero{
+    color: var(--white);
+}
+
+.site-services .columns li {
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+
+.site-services .row .columns li i {
+    font-size: 1.5rem;
+    padding-right: 0.2rem;
+    color: var(--black);
+}
+
+body.dark .site-services .row .columns li i {
+    color: var(--green);
+}
+
+.site-services .row .recomendado{
+    background: var(--black);
+    transform: scale(1.1);
+}
+
+.site-services .row .recomendado .sub-title,
+.site-services .row .recomendado .numero{
+    color: var(--white);
+}
+
+.site-services .row .recomendado li,
+.site-services .row .recomendado li i{
+    color: var(--light-color);
+}
+
+/********************** Services seccion **********************/
+
+.preguntas .accordion-container {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.preguntas .accordion-container .accordion {
+    background: #fff;
+    margin-bottom: 1.5rem;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.preguntas .accordion-container .accordion:last-child {
+    margin-bottom: .5rem;
+}
+
+.preguntas .accordion-container .accordion.active .accordion-heading {
+    background: var(--black);
+}
+
+.preguntas .accordion-container .accordion.active .accordion-heading h3 {
+    color: var(--white);
+}
+
+.preguntas .accordion-container .accordion.active .accordion-heading i {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    color: var(--white);
+}
+
+.preguntas .accordion-container .accordion.active .accordioin-content {
+    display: block;
+    color: var(--black);
+}
+
+.preguntas .accordion-container .accordion .accordion-heading {
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: var(--white);
+    cursor: pointer;
+}
+
+.preguntas .accordion-container .accordion .accordion-heading h3,
+.preguntas .accordion-container .accordion .accordion-heading i {
+    font-size: 2rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.preguntas .accordion-container .accordioin-content {
+    padding: 2rem;
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #666;
+    text-transform: none;
+    display: none;
+    -webkit-animation: fadeIn .2s linear;
+            animation: fadeIn .2s linear;
+}
+
+body.dark .preguntas .accordion-container .accordion .accordion-heading h3,
+body.dark .preguntas .accordion-container .accordion .accordion-heading i {
+    color: var(--white);
+}
+
+body.dark .preguntas .accordion-container .accordion,
+body.dark .preguntas .accordion-container .accordion.active .accordion-heading,
+body.dark .preguntas .accordion-container .accordion .accordion-heading {
+    background: #111111;
+}
+
+body.dark .preguntas .accordion-container .accordion.active .accordion-heading h3,
+body.dark .preguntas .accordion-container .accordion.active .accordion-heading i {
+    color: var(--green);
+}
+
+body.dark .preguntas .accordion-container .accordion.active .accordioin-content {
+    color: var(--light-color);
+}
+
+/********************** Proyectos seccion **********************/
 
 .mas-proyect{
     margin-top: 8rem;
@@ -1400,7 +1639,7 @@ body.dark .eins-modal-text-3 {
         justify-content: center;
     }
 
-    #servicios .row .columns{
+    .servicios .row .columns{
         margin-left: 0;
     }
 

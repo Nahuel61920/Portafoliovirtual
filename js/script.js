@@ -243,11 +243,19 @@ function readMore() {
     }
 }
 
+
+// Ver respuestas
+document.querySelectorAll('.accordion-container .accordion').forEach(accordion =>{
+    accordion.onclick = () =>{
+        accordion.classList.toggle('active');
+    }
+});
+
 // nav proyectos
 let btnWeb = document.querySelector("#btn-web"), btnApps = document.querySelector("#btn-apps"), btnGames = document.querySelector("#btn-games")
-let paginasWeb = document.querySelector("#paginas-web");
-let apps = document.querySelector("#apps");
-let games = document.querySelector("#games");
+let paginasWeb = document.querySelector(".paginas-web");
+let apps = document.querySelector(".apps");
+let games = document.querySelector(".games");
 
 btnWeb.addEventListener("click", (e) =>{
     e.preventDefault();
