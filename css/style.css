@@ -340,6 +340,7 @@ body.dark .navbar .active-link::before {
 
 .inicio{
     display: flex;
+    justify-content: center;
 }
 
 .inicio .titulo{
@@ -348,13 +349,15 @@ body.dark .navbar .active-link::before {
 }
 
 .inicio .titulo p {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: var(--white);
+    position: relative;
+    font-weight: 600;
 }
 
 .inicio .titulo h1{
     font-size: 4.5rem;
-    color: var(--green)
+    color: var(--green);
 }
 
 .wrapper {
